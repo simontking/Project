@@ -1,0 +1,75 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {american}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Contents}{1}{section*.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {2}Software Performance Engineering}{2}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Modelling}{2}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.1}Software Execution Model}{2}{subsection.2.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.2}System Execution Model}{2}{subsection.2.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Application of SPE}{3}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {3}Performance Patterns and Principles}{4}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}A brief history of patterns}{4}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Performance Control Principles}{4}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.1}Performance Objectives}{4}{subsection.3.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.2}Instrumentation}{5}{subsection.3.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Independent Principles}{5}{section.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.1}Fixing Point Principle}{5}{subsection.3.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.2}Locality Design Principle}{5}{subsection.3.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.3}Processing vs Frequency Trade-Off Principle}{5}{subsection.3.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.4}Centering Principle}{5}{subsection.3.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Synergistic Principles}{5}{section.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.1}Shared Resource Principle}{5}{subsection.3.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.2}Parallel processing Principle}{6}{subsection.3.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.3}Spread the load principle}{6}{subsection.3.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.5}Performance patterns}{6}{section.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.1}Fast Path}{6}{subsection.3.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.2}First Things First}{6}{subsection.3.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.3}Coupling}{6}{subsection.3.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.4}Batching}{6}{subsection.3.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.5}Alternate Routes}{7}{subsection.3.5.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.6}Flex Time}{7}{subsection.3.5.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.7}Slender Cyclic Functions}{7}{subsection.3.5.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.6}Performance Anti-patterns}{7}{section.3.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6.1}God Class}{7}{subsection.3.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6.2}Excessive Dynamic Allocation}{7}{subsection.3.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6.3}Circuitous Treasure Hunt}{7}{subsection.3.6.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6.4}One Lane Bridge}{8}{subsection.3.6.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6.5}Traffic Jam}{8}{subsection.3.6.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {4}Conclusions}{8}{chapter.4}

@@ -1,0 +1,44 @@
+\documentclass[a4paper,11pt,article,oneside]{memoir}
+\usepackage{ecis2015}
+\usepackage{subcaption}
+\usepackage[utf8]{inputenc}
+
+%%% Enter Document Info here: %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\maintitle{improving recommendations with trust data} % ← Don't use UPPERCASE here, we do that automatically.
+\shorttitle{Determining the Qualitative Nature of Networks} % ← This goes into the header.
+\category{Case Study} % ← Choose one by deleting the others.
+
+\authors{% Separate authors by a "\par" or blank line.
+	King, Simon, University College Dublin, Ireland, simon.king@ucdconnect.ie}
+
+\shortauthors{King} % ← This goes into the header. 
+
+%\addbibresource{bibliography.bib}
+\begin{document}	
+	\tableofcontents
+	\chapter{Introduction}
+	The following report outlines the qualitative nature of networks. A number of networks were chosen from the SNAP repository –	http://snap.stanford.edu - 
+	. 
+	
+	
+	\newpage
+	\chapter{Recommender Systems}
+	
+	
+	Online Social Networks provide a rapidly expanding source of information which can be used to turn data on a users interests and preferences into recommendations for possible items the user might be interested in in the future. There is no one best method for recommendation systems, rather, a multitude of solutions exist which can be best applied based context and application of the recommendation, as well as the information available  (\cite{Lu2012Recommender}).
+	
+	\section{Collaborative Filtering}
+	Collaborative recommendations work on the idea that people who have agreed in the past tend to agree in the future {\cite{zeng2010can}}. This is achieved by computing similarities based on existing information and making predictions about items' ratings. This can be broken down into two areas: User similarity and Item similarity
+	\subsection{User Similarity} 
+	The aim here is to make predictions of user ratings for items that have not yet been rated. By finding similar users, i.e. users who have rated other items similarly, it can be assumed you may also rate items they have rated similarly. It has been shown to be computationally more efficient to only considering users most similar to the target user, as well as yielding better results. {\cite{goldberg2001eigentaste}}
+	\subsection{Item Similarity} 
+	{\cite{sarwar2001item}} propose a method to estimate an item's rating based similarity to items already rated by the users. Because the item space is relatively static compared to the user space, it is feasible to compute item similarities before the recommendation is required. 	
+
+	\chapter{Trust Networks}
+	\newpage
+	% If you are using BibTeX/Biber:
+	\nocite{*}
+%	\printbibliography
+	
+\end{document}

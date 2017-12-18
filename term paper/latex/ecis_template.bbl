@@ -1,0 +1,664 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\sortlist[entry]{nyt/global/}
+  \entry{alexander1977pattern}{book}{}
+    \name{author}{6}{}{%
+      {{hash=AC}{%
+         family={Alexander},
+         familyi={A\bibinitperiod},
+         given={Christopher},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=IS}{%
+         family={Ishikawa},
+         familyi={I\bibinitperiod},
+         given={Sara},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Silverstein},
+         familyi={S\bibinitperiod},
+         given={Murray},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=iRJR}{%
+         prefix={i},
+         prefixi={i},
+         family={Rami{\'o}},
+         familyi={R\bibinitperiod},
+         given={Joaquim\bibnamedelima Romaguera},
+         giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=JM}{%
+         family={Jacobson},
+         familyi={J\bibinitperiod},
+         given={Max},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=FKI}{%
+         family={Fiksdahl-King},
+         familyi={F\bibinitperiod-K\bibinitperiod},
+         given={Ingrid},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Gustavo Gili}%
+    }
+    \strng{namehash}{AC+1}
+    \strng{fullhash}{ACISSMRJRiJMFKI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1977}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{A pattern language}
+    \field{year}{1977}
+  \endentry
+
+  \entry{beck1999kent}{book}{}
+    \name{author}{1}{}{%
+      {{hash=BK}{%
+         family={Beck},
+         familyi={B\bibinitperiod},
+         given={Kent},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge University Press}%
+    }
+    \strng{namehash}{BK1}
+    \strng{fullhash}{BK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1999}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{Kent Beck's guide to better Smalltalk: a sorted collection}
+    \field{volume}{14}
+    \field{year}{1999}
+  \endentry
+
+  \entry{bezemer2014performance}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BCP}{%
+         family={Bezemer},
+         familyi={B\bibinitperiod},
+         given={Cor-Paul},
+         giveni={C\bibinitperiod-P\bibinitperiod},
+      }}%
+      {{hash=ZA}{%
+         family={Zaidman},
+         familyi={Z\bibinitperiod},
+         given={Andy},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{BCPZA1}
+    \strng{fullhash}{BCPZA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{pages}{87\bibrangedash 103}
+    \field{title}{Performance optimization of deployed software-as-a-service
+  applications}
+    \field{volume}{87}
+    \field{journaltitle}{Journal of Systems and Software}
+    \field{year}{2014}
+  \endentry
+
+  \entry{brown1998antipatterns}{book}{}
+    \name{author}{4}{}{%
+      {{hash=BWH}{%
+         family={Brown},
+         familyi={B\bibinitperiod},
+         given={William\bibnamedelima H},
+         giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=MRC}{%
+         family={Malveau},
+         familyi={M\bibinitperiod},
+         given={Raphael\bibnamedelima C},
+         giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=MHW}{%
+         family={McCormick},
+         familyi={M\bibinitperiod},
+         given={Hays\bibnamedelima W},
+         giveni={H\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=MTJ}{%
+         family={Mowbray},
+         familyi={M\bibinitperiod},
+         given={Thomas\bibnamedelima J},
+         giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {John Wiley \& Sons, Inc.}%
+    }
+    \strng{namehash}{BWH+1}
+    \strng{fullhash}{BWHMRCMHWMTJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1998}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{AntiPatterns: refactoring software, architectures, and
+  projects in crisis}
+    \field{year}{1998}
+  \endentry
+
+  \entry{chauhan2014atlas}{inproceedings}{}
+    \true{moreauthor}
+    \name{author}{10}{}{%
+      {{hash=CN}{%
+         family={Chauhan},
+         familyi={C\bibinitperiod},
+         given={Neelima},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=KG}{%
+         family={Kabra},
+         familyi={K\bibinitperiod},
+         given={Gunjan},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=KT}{%
+         family={Kittelmann},
+         familyi={K\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=LR}{%
+         family={Langenberg},
+         familyi={L\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={Mandrysch},
+         familyi={M\bibinitperiod},
+         given={Rocco},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Salzburger},
+         familyi={S\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Seuster},
+         familyi={S\bibinitperiod},
+         given={Rolf},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=RE}{%
+         family={Ritsch},
+         familyi={R\bibinitperiod},
+         given={Elmar},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Stewart},
+         familyi={S\bibinitperiod},
+         given={Graeme},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=vEN}{%
+         prefix={van},
+         prefixi={v\bibinitperiod},
+         family={Eldik},
+         familyi={E\bibinitperiod},
+         given={Niels},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IOP Publishing}%
+    }
+    \strng{namehash}{CN+1}
+    \strng{fullhash}{CNKGKTLRMRSASRRESGENv+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{booktitle}{Journal of Physics: Conference Series}
+    \field{number}{5}
+    \field{pages}{052022}
+    \field{title}{ATLAS offline software performance monitoring and
+  optimization}
+    \field{volume}{513}
+    \field{year}{2014}
+  \endentry
+
+  \entry{gamma1993design}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=GE}{%
+         family={Gamma},
+         familyi={G\bibinitperiod},
+         given={Erich},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=HR}{%
+         family={Helm},
+         familyi={H\bibinitperiod},
+         given={Richard},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=JR}{%
+         family={Johnson},
+         familyi={J\bibinitperiod},
+         given={Ralph},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=VJ}{%
+         family={Vlissides},
+         familyi={V\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{GE+1}
+    \strng{fullhash}{GEHRJRVJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1993}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{booktitle}{European Conference on Object-Oriented Programming}
+    \field{pages}{406\bibrangedash 431}
+    \field{title}{Design patterns: Abstraction and reuse of object-oriented
+  design}
+    \field{year}{1993}
+  \endentry
+
+  \entry{koenig1998patterns}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KA}{%
+         family={Koenig},
+         familyi={K\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KA1}
+    \strng{fullhash}{KA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1998}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{pages}{383}
+    \field{title}{Patterns and antipatterns}
+    \field{volume}{13}
+    \field{journaltitle}{The patterns handbook: techniques, strategies, and
+  applications}
+    \field{year}{1998}
+  \endentry
+
+  \entry{1278475919910901}{article}{}
+    \name{author}{1}{}{%
+      {{hash=OPDT}{%
+         family={O'Connor},
+         familyi={O\bibinitperiod},
+         given={P.\bibnamedelima D.\bibnamedelima T.},
+         giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim
+  T\bibinitperiod},
+      }}%
+    }
+    \keyw{COMPUTER systems, NONFICTION, JAIN, R., ART of Computer Systems
+  Performance Analysis, Techniques for Experimental Design, Measurement,
+  Simulation & Modeling, The (Book)}
+    \strng{namehash}{OPDT1}
+    \strng{fullhash}{OPDT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1991}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{abstract}{%
+    Reviews the book The Art of Computer Systems Performance Analysis, by R.
+  Jain.%
+    }
+    \field{issn}{07488017}
+    \field{number}{5}
+    \field{pages}{432}
+    \field{title}{The Art of Computer Systems Performance Analysis (Book).}
+    \verb{url}
+    \verb http://search.ebscohost.com.ucd.idm.oclc.org/login.aspx?direct=true&d
+    \verb b=a9h&AN=12784759&site=ehost-live
+    \endverb
+    \field{volume}{7}
+    \field{journaltitle}{Quality & Reliability Engineering International}
+    \field{year}{1991}
+  \endentry
+
+  \entry{smith1988applying}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SCU}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={Connie\bibnamedelima U.},
+         giveni={C\bibinitperiod\bibinitdelim U\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{SCU2}
+    \strng{fullhash}{SCU2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1988}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{10}
+    \field{pages}{1394\bibrangedash 1408}
+    \field{title}{Applying synthesis principles to create responsive software
+  systems}
+    \field{volume}{14}
+    \field{journaltitle}{IEEE Transactions on Software Engineering}
+    \field{year}{1988}
+  \endentry
+
+  \entry{smith1990performance}{book}{}
+    \name{author}{1}{}{%
+      {{hash=SCU}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={Connie\bibnamedelima U},
+         giveni={C\bibinitperiod\bibinitdelim U\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Addison-Wesley Longman Publishing Co., Inc.}%
+    }
+    \strng{namehash}{SCU1}
+    \strng{fullhash}{SCU1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1990}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Performance engineering of software systems}
+    \field{year}{1990}
+  \endentry
+
+  \entry{smith1997performance}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=SCU}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={Connie\bibnamedelima U},
+         giveni={C\bibinitperiod\bibinitdelim U\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{SCU1}
+    \strng{fullhash}{SCU1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1997}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{Computer Software and Applications Conference, 1997.
+  COMPSAC'97. Proceedings., The Twenty-First Annual International}
+    \field{pages}{166\bibrangedash 167}
+    \field{title}{Performance engineering for software architectures}
+    \field{year}{1997}
+  \endentry
+
+  \entry{smith2002performance}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=SCU}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={Connie\bibnamedelima U},
+         giveni={C\bibinitperiod\bibinitdelim U\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{SCU1}
+    \strng{fullhash}{SCU1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2002}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{Modeling, Analysis and Simulation of Computer and
+  Telecommunications Systems, 2002. MASCOTS 2002. Proceedings. 10th IEEE
+  International Symposium on}
+    \field{pages}{225}
+    \field{title}{Performance models for computer and telecommunications
+  systems: maximizing the benefits}
+    \field{year}{2002}
+  \endentry
+
+  \entry{smith1993software}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SCU}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={Connie\bibnamedelima U.},
+         giveni={C\bibinitperiod\bibinitdelim U\bibinitperiod},
+      }}%
+      {{hash=WLG}{%
+         family={Williams},
+         familyi={W\bibinitperiod},
+         given={Lloyd\bibnamedelima G.},
+         giveni={L\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{SCUWLG2}
+    \strng{fullhash}{SCUWLG2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1993}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{7}
+    \field{pages}{720\bibrangedash 741}
+    \field{title}{Software performance engineering: A case study including
+  performance comparison with design alternatives}
+    \field{volume}{19}
+    \field{journaltitle}{IEEE Transactions on software engineering}
+    \field{year}{1993}
+  \endentry
+
+  \entry{smith1999performance}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SCU}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={Connie\bibnamedelima U},
+         giveni={C\bibinitperiod\bibinitdelim U\bibinitperiod},
+      }}%
+      {{hash=WLG}{%
+         family={Williams},
+         familyi={W\bibinitperiod},
+         given={Lloyd\bibnamedelima G},
+         giveni={L\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{SCUWLG3}
+    \strng{fullhash}{SCUWLG3}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1999}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{1}
+    \field{pages}{63\bibrangedash 80}
+    \field{title}{A performance model interchange format}
+    \field{volume}{49}
+    \field{journaltitle}{Journal of Systems and Software}
+    \field{year}{1999}
+  \endentry
+
+  \entry{smith2001performance}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SCU}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={Connie\bibnamedelima U},
+         giveni={C\bibinitperiod\bibinitdelim U\bibinitperiod},
+      }}%
+      {{hash=WLG}{%
+         family={Williams},
+         familyi={W\bibinitperiod},
+         given={Lloyd\bibnamedelima G},
+         giveni={L\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Addison-Wesley Professional}%
+    }
+    \strng{namehash}{SCUWLG3}
+    \strng{fullhash}{SCUWLG3}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2001}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Performance solutions: a practical guide to creating
+  responsive, scalable software}
+    \field{year}{2001}
+  \endentry
+
+  \entry{smith2003best}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=SCU}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={Connie\bibnamedelima U},
+         giveni={C\bibinitperiod\bibinitdelim U\bibinitperiod},
+      }}%
+      {{hash=WLG}{%
+         family={Williams},
+         familyi={W\bibinitperiod},
+         given={Lloyd\bibnamedelima G},
+         giveni={L\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SCUWLG1}
+    \strng{fullhash}{SCUWLG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2003}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{Int. CMG Conference}
+    \field{pages}{83\bibrangedash 92}
+    \field{title}{Best practices for software performance engineering}
+    \field{year}{2003}
+  \endentry
+
+  \entry{williams1995information}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=WLG}{%
+         family={Williams},
+         familyi={W\bibinitperiod},
+         given={Lloyd\bibnamedelima G},
+         giveni={L\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=SCU}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={Connie\bibnamedelima U},
+         giveni={C\bibinitperiod\bibinitdelim U\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{WLGSCU1}
+    \strng{fullhash}{WLGSCU1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1995}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{booktitle}{International Conference on Modelling Techniques and
+  Tools for Computer Performance Evaluation}
+    \field{pages}{86\bibrangedash 101}
+    \field{title}{Information requirements for software performance
+  engineering}
+    \field{year}{1995}
+  \endentry
+
+  \entry{woodside2007future}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=WM}{%
+         family={Woodside},
+         familyi={W\bibinitperiod},
+         given={Murray},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=FG}{%
+         family={Franks},
+         familyi={F\bibinitperiod},
+         given={Greg},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=PDC}{%
+         family={Petriu},
+         familyi={P\bibinitperiod},
+         given={Dorina\bibnamedelima C},
+         giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{WMFGPDC1}
+    \strng{fullhash}{WMFGPDC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2007}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{booktitle}{Future of Software Engineering, 2007. FOSE'07}
+    \field{pages}{171\bibrangedash 187}
+    \field{title}{The future of software performance engineering}
+    \field{year}{2007}
+  \endentry
+\endsortlist
+\endinput
