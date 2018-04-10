@@ -52,7 +52,7 @@ def animate(i):
     ax1.clear()
     ax1.plot(np.arange(0,len(acor1)),acor1)    
     
-    #ax1.plot(np.arange(0,len(acor2)),acor2)
+    #ax1.plot(np.arange(0,len(acor2    return multiarray.correlate2(a, v, mode))),acor2)
     t0 = np.arange(0,len(sample))/44100;
     t1 = np.arange(0,len(firstSample))/44100;
     t2 = np.arange(0,len(secondSample))/44100;

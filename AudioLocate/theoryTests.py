@@ -1,10 +1,14 @@
+
 import matplotlib.pyplot as plt
+import cairo
 import numpy as np
 import scipy.io.wavfile as wf
 import soundfile as sf
 import sounddevice as sd
 import tempfile
 import threading
+
+print(sd.query_devices())
 plt.ion
 def measure(scData, micData, fs, latency):
     timeDiff = correlate(scData, micData, fs)
@@ -82,8 +86,8 @@ print(measureTimeOfArrival(samples, paddedSample, fs))
 #window = np.hanning(len(samples))*samples
 #paddedWindow = np.append(silence, np.append(silence, np.append(window, silence)))
 #print(measureTimeOfArrival(window, paddedWindow, fs))#
-print(measureTimeOfArrival(samples, np.append(np.zeros(fs * (1)), paddedSample), fs))
-firstSample = np.append(np.zeros(fs * (1.3)), np.append(samples, np.zeros(fs * (2))))
-secondSample = np.append(np.zeros(fs * (2.8)), np.append(samples, np.zeros(fs * (1))))
+print("Test",measureTimeOfArrival(samples, np.append(np.zeros(int(fs * (1))), paddedSample), fs))
+firstSample = np.append(np.zeros(int(fs * (1.3))), np.append(samples, np.zeros(int(fs * (2)))))
+secondSample = np.append(np.zeros(int(fs * (2.8))), np.append(samples, np.zeros(int(fs * (1)))))
 print(measureTimeDifferenceOfArrival(samples, firstSample, secondSample, fs))
 plt.show()

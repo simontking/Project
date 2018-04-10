@@ -7,9 +7,29 @@ duration = 0.02   # in seconds, may be float
 frequency = 10000.0        # sine frequency, Hz, may be float
 
 # generate samples, note conversion to float32 array
+def generateSinSample(frequency, sampleRate, duration, filename):
+    sample = empty((int(sampleRate*duration),1))
+    sample[:,0] = (sin(2*pi*arange(sampleRate*duration)*frequency/sampleRate))
+    sf.write(filename + '.wav', sample, sampleRate)
+    return sample
+
+def generateCosSample(frequency, sampleRate, duration, filename):
+    sample = empty((int(sampleRate*duration),1))
+    sample[:,0] = (cos(2*pi*arange(sampleRate*duration)*frequency/sampleRate))
+    sf.write(filename + '.wav', sample, sampleRate)
+    return sample
+
 def generateSample(frequencyL, frequencyR, sampleRate, duration, filename):
-    sample = empty(((sampleRate*duration),2))
+    sample = empty((int(sampleRate*duration),2))
     sample[:,0] = (sin(2*pi*arange(sampleRate*duration)*frequencyL/sampleRate))
     sample[:,1] = (sin(2*pi*arange(sampleRate*duration)*frequencyR/sampleRate))
     sf.write(filename + '.wav', sample, sampleRate)
     return sample
+
+def generateZCSample(N,M):
+    zcseq = exp((-1j * pi * M * arange(0,N) * arange(1,N+1))/N)
+    return zcseq
+
+
+s= generateSample(5000,5000,44100,0.1,'jerry')
+
