@@ -12,38 +12,43 @@ import sounddevice as sd
 import tempfile
 import threading
 import time
-import findlag 
+import findlag
 import signalgeneration as sig
+import math
 
+print(sd.query_devices())
 audio = pyaudio.PyAudio()
-sd.default.device = 'Samson C03U','bcm2835 ALSA: - (hw:2,0)'
-devicePi = 'bcm2835 ALSA: - (hw:2,0)'
-argsinterval=30
-argsblocksize=256
-argsbuffersize=256
-argssamplerate=44100
-argsdownsample=10
-argschannels=1
+# sd.default.device = 'Samson C03U', 'bcm2835 ALSA: - (hw:2,0)'
+# devicePi = 'bcm2835 ALSA: - (hw:2,0)'
+sd.default.device = 1, 3
+devicePi = 3
+argsinterval = 30
+argsblocksize = 256
+argsbuffersize = 256
+argssamplerate = 44100
+argsdownsample = 10
+argschannels = 1
 
 micq = queue.Queue(maxsize=argsbuffersize)
 scq = queue.Queue(maxsize=argsbuffersize)
 piq = queue.Queue(maxsize=argsbuffersize)
 
 p = pyaudio.PyAudio()
-fig, (ax1) = plt.subplots(1,1)
+fig, (ax1) = plt.subplots(1, 1)
 plt.ion
 
-volume = 1.0     # range [0.0, 1.0]
-fs = 44100       # sampling rate, Hz, must be integer
-duration = 0.05   # in seconds, may be float
-f = 8000.0        # sine frequency, Hz, may be float
+volume = 1.0  # range [0.0, 1.0]
+fs = 44100  # sampling rate, Hz, must be integer
+duration = 0.05  # in seconds, may be float
+f = 8000.0  # sine frequency, Hz, may be float
 
 # generate samples, note conversion to float32 array
-samples = (np.sin(2*np.pi*np.arange(fs*duration)*f/fs)).astype(np.float32)
-silence = np.zeros(fs * 0.1)
+samples = (np.sin(2 * np.pi * np.arange(fs * duration) * f / fs)).astype(np.float32)
+silence = np.zeros(math.trunc(fs * 0.1))
 paddedSample = np.append(silence, samples)
 paddedSample = np.append(paddedSample, silence)
 sf.write('sine440.wav', paddedSample, fs)
+
 
 def mic_audio_callback(indata, frames, time, status):
     """This is called (from a separate thread) for each audio block."""
@@ -53,6 +58,7 @@ def mic_audio_callback(indata, frames, time, status):
     if any(indata):
         micq.put(indata.copy())
 
+
 def sc_audio_callback(indata, frames, time, status):
     """This is called (from a separate thread) for each audio block."""
     if status:
@@ -61,8 +67,9 @@ def sc_audio_callback(indata, frames, time, status):
     if any(indata):
         scq.put(indata.copy())
 
+
 def pi_audio_callback(outdata, frames, time, status):
-    #print("pi_CB")
+    # print("pi_CB")
     """This is called (from a separate thread) for each audio block."""
     assert frames == argsblocksize
     if status.output_underflow:
@@ -81,10 +88,11 @@ def pi_audio_callback(outdata, frames, time, status):
     else:
         outdata[:] = data
 
+
 def measure(vlatency):
     event = threading.Event()
-    micdata =  np.zeros(1)
-    scdata =  np.zeros(1)
+    micdata = np.zeros(1)
+    scdata = np.zeros(1)
     micstream = sd.InputStream(
         device=deviceMic, channels=argschannels,
         samplerate=argssamplerate, callback=mic_audio_callback)
@@ -97,13 +105,13 @@ def measure(vlatency):
             if not data:
                 break
             piq.put_nowait(data)  # Pre-fill queue
-            
+
             stream = sd.RawOutputStream(
                 samplerate=f.samplerate, blocksize=argsblocksize,
                 device=devicePi, channels=f.channels, dtype='float32',
                 callback=pi_audio_callback, finished_callback=event.set)
             with stream:
-                timeout = argsblocksize * argsbuffersize / f.samplerate       
+                timeout = argsblocksize * argsbuffersize / f.samplerate
                 with micstream:
                     with scstream:
                         while data:
@@ -127,29 +135,30 @@ def measure(vlatency):
         micq.queue.clear()
     return timediff, distance
 
+
 def latency():
     event = threading.Event()
-    micdata =  np.zeros(1)
-    scdata =  np.zeros(1)
+    micdata = np.zeros(1)
+    scdata = np.zeros(1)
     micstream = sd.InputStream(
         device=deviceMic, channels=argschannels,
         samplerate=argssamplerate, callback=mic_audio_callback)
     scstream = sd.InputStream(
         device=deviceSoundcard, channels=argschannels,
         samplerate=argssamplerate, callback=sc_audio_callback)
-    with sf.SoundFile('sine440.wav') as f:          
+    with sf.SoundFile('sine440.wav') as f:
         for _ in range(argsbuffersize):
             data = f.buffer_read(argsblocksize, dtype='float32')
             if not data:
                 break
             piq.put_nowait(data)  # Pre-fill queue
-            
+
             stream = sd.RawOutputStream(
                 samplerate=f.samplerate, blocksize=argsblocksize,
                 device=devicePi, channels=f.channels, dtype='float32',
                 callback=pi_audio_callback, finished_callback=event.set)
             with stream:
-                timeout = argsblocksize * argsbuffersize / f.samplerate       
+                timeout = argsblocksize * argsbuffersize / f.samplerate
                 with micstream:
                     with scstream:
                         while data:
@@ -172,19 +181,20 @@ def latency():
 
 def simple_transceiver():
     sample = sig.generateSample(10000, 10000, 44100, 0.02, 'sample')
-    micdata  = sd.playrec(sample, samplerate=44100, channels=2, dtype='float32')
+    micdata = sd.playrec(sample, samplerate=44100, channels=2, dtype='float32')
     sd.wait()
     print(micdata.shape)
-    d=micdata.sum(axis=1)/2
-    timediff,acor,distance = findlag.measureTimeOfArrival(sample, d, 44100)
+    d = micdata.sum(axis=1) / 2
+    timediff, acor, distance = findlag.measureTimeOfArrival(sample, d, 44100)
     with open('micdata', 'wb') as micf:
         np.save(micf, micdata)
     with open('sampledata', 'wb') as sf:
         np.save(sf, sample)
     return timediff
 
+
 def stream_callback(indata, outdata, frames, time, status):
-    #print("pi_CB")
+    # print("pi_CB")
     """This is called (from a separate thread) for each audio block."""
     assert frames == argsblocksize
     if status.output_underflow:
@@ -193,38 +203,42 @@ def stream_callback(indata, outdata, frames, time, status):
     assert not status
     try:
         data = piq.get_nowait()
-    except piq.Empty:
+    except piq.empty():
         print('Buffer is empty: increase buffersize?', file=sys.stderr)
         raise sd.CallbackAbort
     if len(data) < len(outdata):
         outdata[:len(data)] = data
-        outdata[len(data):] = np.zeros(((len(outdata) - len(data)),2))
+        outdata[len(data):] = np.zeros(((len(outdata) - len(data)), 2))
         raise sd.CallbackStop
     else:
         outdata[:] = data
-    if len(indata)>0:
+    if len(indata) > 0:
         micq.put(indata.copy())
+
 
 def stream_transceiver():
     event = threading.Event()
     sample = sig.generateSample(10000, 10000, 44100, 0.05, 'sample')
-    micdata =  np.zeros(1)
-    scdata =  np.zeros(1)
+    micdata = np.zeros(1)
+    scdata = np.zeros(1)
     with piq.mutex:
         piq.queue.clear()
     with micq.mutex:
         micq.queue.clear()
-    micstream = sd.Stream(channels=(2,2), samplerate=argssamplerate, callback=stream_callback,
-                          blocksize=argsblocksize, device = ['Samson C03U','bcm2835 ALSA: - (hw:2,0)'],
+    # micstream = sd.Stream(channels=(2, 2), samplerate=argssamplerate, callback=stream_callback,
+    #                       blocksize=argsblocksize, device=['Samson C03U', 'bcm2835 ALSA: - (hw:2,0)'],
+    #                       finished_callback=event.set)
+    micstream = sd.Stream(channels=(2, 2), samplerate=argssamplerate, callback=stream_callback,
+                          blocksize=argsblocksize, device=[1, 3],
                           finished_callback=event.set)
-    with sf.SoundFile('sample.wav','r') as f:
+    with sf.SoundFile('sample.wav', 'r') as f:
         while f.tell() < len(f):
             data = f.read(argsblocksize, dtype='float32')
             if len(data) <= 0:
                 break
             piq.put_nowait(data)
             with micstream:
-                timeout = argsblocksize * argsbuffersize / f.samplerate   
+                timeout = argsblocksize * argsbuffersize / f.samplerate
                 while f.tell() < len(f):
                     data = f.read(argsblocksize, dtype='float32')
                     piq.put(data, timeout=timeout)
@@ -241,6 +255,7 @@ def stream_transceiver():
         micq.queue.clear()
     return timediff, distance
 
+
 def get_latency():
     try:
         lagArray = []
@@ -248,7 +263,7 @@ def get_latency():
             x, i = latency()
             lagArray.append(x)
         xLat = np.mean(lagArray)
-        print (xLat)
+        print(xLat)
         return xLat
     except KeyboardInterrupt:
         print('\nInterrupted by user')
@@ -257,25 +272,27 @@ def get_latency():
         print("Queue Full")
     except Exception as e:
         print(type(e).__name__ + ': ' + str(e))
-        
+
+
 def output():
     event = threading.Event()
-    with sf.SoundFile('sine440.wav') as f:          
+    with sf.SoundFile('sine440.wav') as f:
         for _ in range(argsbuffersize):
             data = f.buffer_read(argsblocksize, dtype='float32')
             if not data:
                 break
             piq.put_nowait(data)  # Pre-fill queue
-            
+
             stream = sd.RawOutputStream(
                 samplerate=f.samplerate, blocksize=argsblocksize,
                 device=devicePi, channels=f.channels, dtype='float32',
                 callback=pi_audio_callback, finished_callback=event.set)
             with stream:
-                timeout = argsblocksize * argsbuffersize / f.samplerate       
+                timeout = argsblocksize * argsbuffersize / f.samplerate
                 while data:
                     data = f.buffer_read(argsblocksize, dtype='float32')
                     piq.put(data, timeout=timeout)
                 event.wait()
 
-print(stream_transceiver())
+
+print(simple_transceiver())

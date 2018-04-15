@@ -33,6 +33,7 @@ def measureTimeDifferenceOfArrival(sample, firstSample, secondSample, fs):
     
     return timeDiff, distance
 
+
 def correlate(baseSample, data, fs):
     acor = np.correlate(data,baseSample,"full");
     with open('corrdata', 'wb') as micf:
