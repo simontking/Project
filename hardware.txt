@@ -1,0 +1,51 @@
+lazik-alps:
+Lazic et al propose a system that use a combination of ultrasound and Bluetooth to obtain precise localizatoin in small and medium sized areas using a TDOA. The system was designed using time synchronized ultrasonic signal 
+
+Range-based approaches use measured distances or angular
+estimates between known anchor points to compute a position.
+Range-free approaches on the other hand typically attempt
+to match either synthetic or naturally occurring signatures
+to a particular location.
+TOA and TDOF systems both require bidirectional
+coordination between the infrastructure and the
+device being tracked which generally limits scalability.
+
+[An Ultrasonic Multiple-Access Ranging Core Based on
+Frequency Shift Keying Towards Indoor Localization]
+Our ultrasonic ranging system is composed of one receiver (Figure 1) and multiple transmitters.
+The transmitters emit an orthogonal ultrasonic coded signal, which is received and processed by the
+receiver. Both transmitters and receiver are equipped with an embedded FPGA, which has two major
+purposes. On the one hand, it facilitates the generation of the orthogonal ultrasonic signal, while on the
+other hand, due to the high degree of parallel processing capabilities, the FPGA enables the real-time
+embedded processing of the orthogonal ultrasonic signals. Transmitters and receiver are synchronized
+by means of a wire, which minimizes the synchronization error during the experiments.
+
+[Design and Implementation of a Fully Distributed Ultrasonic
+Positioning System]
+ This is the basic idea of iterative
+multilateration. 
+
+[Distributed FPGA-based architecture to support indoor localisation and
+orientation services]
+one of the most promising approaches in
+localisation/orientation of users in indoor environments is the
+analysis of video streaming from the consumer electronic devices
+that users carry
+
+[Gradient-Based Fingerprinting for Indoor
+Localization and Tracking]
+Localization can be achieved by
+performing lookups within a pre-established database. On the
+basis of basic fingerprinting, Horus [46] adopts a probabilitybased
+inference model, where the RSSI from an AP is modeled
+into a random variable in both time and spatial domains
+Another issue of fingerprinting is the time-varying signal
+strength and biased observations reported by heterogeneous
+devices 
+
+[GSM indoor localization]
+This paper demonstrated that accurate indoor GSM-based localization is possible
+thanks to the use of wide signal-strength fingerprints that include readings of up to 29
+GSM channels in addition to the 6-strongest cells. We also showed that the localization
+performance can be further improved by carefully selecting a subset of highly relevant
+channels to be used for fingerprinting matching.

@@ -1,0 +1,30 @@
+[Improving the accuracy of ultrasound-based localisation systems] 
+We use a modified
+BPSK demodulator (see Fig. 5) to limit the demand
+for computational power. First, the received signal is
+transformed from a pass band signal to a base band
+signal by the quadrature mixer. The signal is split into
+an in-phase and a quadrature component. Before a
+data reduction stage, the signals are low-pass filtered.
+The resulting signals are correlated with the stored
+Barker code using the schema in Fig. 6. These modifications
+to the BPSK demodulator reduce the computational
+requirements to about 10 MIPS. Of course,
+these modifications degrade accuracy. The overall
+accuracy we experienced is well within our requirements
+(see Sect. 4.2). The resulting signal of the receiver
+is an envelope, showing how good the received
+signal matches the stored signal. The best match and
+thus the time of arrival of the signal can be easily
+determined by a search for the global maximum.
+
+. This problem shows that
+a search for the global maximum cannot be used in
+practice. We are working on a heuristic method to find
+the first peak in the envelope.
+Subsequently, sending a 13-chip Barker code and
+waiting several milliseconds for it to fade away yields
+an update rate that is comparable to the method of
+simultaneously sending long codes. The increased effort
+in decoding simultaneously sent ultrasound signals
+does not achieve enough improvement to justify itself.

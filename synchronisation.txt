@@ -1,0 +1,19 @@
+The MIT cricket [The
+cricket location-support system.] localization
+system uses the difference between RF and ultrasonic
+signals. The system is capable of extremely accurate
+range measurements, but requires line-of-sight communication,
+careful node positioning and high node density. It also
+requires tight synchronization between the infrastructure and
+the mobile devices.
+
+since the ultrasonic signal is a pulse, the systems are
+allowed to have only one active ultrasonic transmitter at a given timeslot. This principle is also known
+as time division multiple access (TDMA)
+
+lazik
+Ultrasonic Beacon Firmware: Each Ultrasonic Beacon
+synchronizes with the Network Master over a single hop
+using its 802.15.4 radio. Once the beacon is synchronized,
+it plays back the ultrasonic signal stored in its flash memory
+at the beginning of its designated TDMA slot.

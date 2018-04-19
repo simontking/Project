@@ -1,0 +1,142 @@
+The Indoor Location Problem
+is NOT Solved
+After more than a decade of intensive work
+in this area, the indoor location problem
+remains unsolved. There does not seem
+to exist a technology or a combination
+of technologies that can recreate the
+experience that GPS offers outdoors in the
+indoor environment. Even though Klepal
+et al. managed to achieve an impressive
+1.6m accuracy solely based on off-the-shelf
+access points, and Bestmann et al. were able
+to achieve 0.72m location error, this level
+of accuracy can only enable a subset of the
+envisioned indoor localization scenarios.
+Applications that require room-level or
+even meter level accuracy (i.e., indoor
+navigation), can be easily powered by such
+technologies.
+However, more sophisticated
+applications such as dynamic personalized
+pricing, and product placement and
+advertisements in the context of retail
+stores (i.e., grocery or clothing stores)
+require much higher granularity of location
+information. In such scenarios, there might
+be tens of different products within a meter
+distance from the user, rendering the
+current systems inefficient.
+FIGURE 4. Average location error and its standard deviation across
+all teams for each of the 20 evaluation points.
+TABLE 3. Automatic evaluation using the EVARILOS benchmarking
+platform. For Klepal et al., the robot evaluation included only 18 out
+of the total 20 evaluation points. Obstacles or failures in robot’s
+navigation, prevented the robot from placing the system-under-test
+above the remaining two evaluation points.
+Approach Manual Robot
+Bestmann et al. 0.72 0.72
+Klepal et al. 1.56 1.71
+TABLE 2: Average Location Error (meters)
+[(ALMOST) UNPUBLISHABLE RESULTS]
+30 GetMobile OCTOBER 2014 | Volume 18, Issue 4
+Deployment Overhead
+Remains Too High
+Most of the teams that participated in
+the competition had to deploy custom
+infrastructure, and the rest had to
+manually profile the evaluation area. From
+directly observing all the teams during the
+setup day of the competition, it became
+clear that the deployment/profiling cost of
+current approaches is prohibitively high.
+All teams were given 7 hours to deploy
+their hardware and/or profile a relatively
+small area of 300m². Even though one
+would think that 7 hours should be way
+more than enough time for the teams to
+setup their systems, this wasn’t the case.
+Most teams (with a couple of exceptions)
+required all 7 hours to set up, and for some
+teams 7 hours was not enough to profile
+the whole 300m² of the competition space.
+This is particularly concerning given
+the fact that the teams did not have to
+worry about any practical issues that any
+commercial deployment would impose
+(i.e., aesthetics, properly hiding
+the deployed equipment, etc.).
+In addition, the whole process of
+deploying custom hardware and profiling
+the space was quite intrusive. We don’t
+believe that any business owner would like
+to perform either of these two tasks while
+real customers are in the business.
+When considering the massive size of
+deployment candidate sites (i.e., shopping
+malls) and how intrusive, time consuming
+and labor intensive the processes of
+deploying hardware and profiling the space
+are, realistic indoor location deployments
+that can achieve centimeter-level accuracy
+seem infeasible at this point. Reducing the
+overhead and manual labor required by the
+different indoor location technologies is of
+paramount importance for their success.
+Custom Hardware Solutions
+Are Not Mature Enough
+Most of the competing teams employed
+customized hardware in their systems.
+However, only Bestmann et al. was able to
+achieve better accuracy than the top two
+infrastructure-free approaches (Klepal et al.,
+Laoudias et al). Even though solely based
+on commercially available access points
+and sensors, these two approaches were
+able to achieve less than 2 meters location
+error, performing significantly better than
+most infrastructure-based approaches. Even
+worse, the winning system by Bestmann
+et al., achieved a location error of 0.72m,
+which is only half of the infrastructure-free
+approaches’ error.
+Given that infrastructure-based
+solutions require orders of magnitude
+higher deployment cost (i.e., more time
+consuming, higher financial cost, more
+intrusive etc.) compared to infrastructurefree
+approaches, the improvement they
+currently offer in terms of localization
+accuracy does not justify their existence. We
+believe that infrastructure-based approaches
+are promising, but nowhere close to where
+they should be. To become an interesting
+alternative, any approach in this area needs
+to achieve significantly higher localization
+accuracy than traditional WiFi-based
+indoor location techniques.
+Changes in the Environment
+Impact Accuracy
+Even though previous studies have
+already shown that large objects such as
+furniture and human presence can impact
+localization accuracy, indoor location
+technologies are typically evaluated on
+static environments. By modifying the
+furniture setup in one of the rooms in the
+evaluation area we were able to quantify
+the impact of large objects on different
+indoor location approaches. Infrastructurefree
+approaches that rely on WiFi signals
+can experience up to 1 meter of location
+error increase due to furniture setup
+changes (Table 2). This is particularly high
+considering that the average location error
+of the top infrastructure-free approach
+was 1.6m. However, the increase in
+location error depends heavily on the
+implementation. For instance, the top two
+teams in the infrastructure-free category
+experience less than 0.5m or even no
+increase in error at all when the furniture
+setup is altered.

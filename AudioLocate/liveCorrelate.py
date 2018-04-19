@@ -34,7 +34,11 @@ scq = queue.Queue(maxsize=argsbuffersize)
 piq = queue.Queue(maxsize=argsbuffersize)
 
 p = pyaudio.PyAudio()
+<<<<<<< HEAD
 fig, (ax1) = plt.subplots(1, 1)
+=======
+fig, (ax1,ax2) = plt.subplots(1,2)
+>>>>>>> 950b8d5c925265f51a0d2dd35d00e3884318bd10
 plt.ion
 
 volume = 1.0  # range [0.0, 1.0]
@@ -43,8 +47,13 @@ duration = 0.05  # in seconds, may be float
 f = 8000.0  # sine frequency, Hz, may be float
 
 # generate samples, note conversion to float32 array
+<<<<<<< HEAD
 samples = (np.sin(2 * np.pi * np.arange(fs * duration) * f / fs)).astype(np.float32)
 silence = np.zeros(math.trunc(fs * 0.1))
+=======
+samples = (np.sin(2*np.pi*np.arange(fs*duration)*f/fs)).astype(np.float32)
+silence = np.zeros(int(fs * 0.1))
+>>>>>>> 950b8d5c925265f51a0d2dd35d00e3884318bd10
 paddedSample = np.append(silence, samples)
 paddedSample = np.append(paddedSample, silence)
 sf.write('sine440.wav', paddedSample, fs)
@@ -180,16 +189,33 @@ def latency():
 
 
 def simple_transceiver():
+<<<<<<< HEAD
     sample = sig.generateSample(10000, 10000, 44100, 0.02, 'sample')
     micdata = sd.playrec(sample, samplerate=44100, channels=2, dtype='float32')
     sd.wait()
     print(micdata.shape)
     d = micdata.sum(axis=1) / 2
     timediff, acor, distance = findlag.measureTimeOfArrival(sample, d, 44100)
+=======
+    print('yo')
+    sample = sig.generateSample(10000, 10000, 44100, 0.1, 'sample')
+    samplePad = np.append(sample,np.zeros(44100))
+    micdata  = sd.playrec(samplePad, samplerate=44100, channels=2, dtype='float32')
+    sd.wait()
+    print(micdata.shape)
+    d=micdata.sum(axis=1)/2
+    timediff,acor,distance = findlag.measureTimeOfArrival(sample.sum(axis=1)/2, d, 44100)
+>>>>>>> 950b8d5c925265f51a0d2dd35d00e3884318bd10
     with open('micdata', 'wb') as micf:
         np.save(micf, micdata)
     with open('sampledata', 'wb') as sf:
         np.save(sf, sample)
+    
+    ax1.clear()
+    ax1.plot(np.arange(0,len(micdata)),micdata)
+    ax2.clear()
+    ax2.plot(np.arange(0,len(sample)),sample)
+    plt.show()
     return timediff
 
 
@@ -218,9 +244,15 @@ def stream_callback(indata, outdata, frames, time, status):
 
 def stream_transceiver():
     event = threading.Event()
+<<<<<<< HEAD
     sample = sig.generateSample(10000, 10000, 44100, 0.05, 'sample')
     micdata = np.zeros(1)
     scdata = np.zeros(1)
+=======
+    sample = sig.generateSample(10000, 10000, 44100, 0.1, 'sample')
+    micdata =  np.zeros(1)
+    scdata =  np.zeros(1)
+>>>>>>> 950b8d5c925265f51a0d2dd35d00e3884318bd10
     with piq.mutex:
         piq.queue.clear()
     with micq.mutex:
@@ -294,5 +326,10 @@ def output():
                     piq.put(data, timeout=timeout)
                 event.wait()
 
+<<<<<<< HEAD
 
 print(simple_transceiver())
+=======
+x = simple_transceiver()
+print('ok')
+>>>>>>> 950b8d5c925265f51a0d2dd35d00e3884318bd10

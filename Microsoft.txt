@@ -1,0 +1,38 @@
+2016 entries
+
+lessons learned
+With this in mind, we organized the Microsoft Indoor Localization Competition [1].
+The main motivation behind the competition was to give different academic and industry
+groups the opportunity to test their indoor location technologies in a realistic, unfamiliar
+environment. This environment established a common baseline for assessing the relative
+accuracy and overhead of the different indoor location technologies. At the same time, it
+allowed researchers working on the indoor location to meet and interact with each other,
+and closely observe the competing solutions in action.
+
+Hoppe
+smartphone tracking
+TDOA
+multiple recievers mounted
+phone emits pulses
+receivers record and send to server for processing
+
+Hammer
+TOF
+CSS
+hyperbolic frequency modulated signal (HFM) UWB probably
+First peak picking to account for MPE
+fm radio synchronisation
+
+perez cruz
+TDOA
+Devices emits reference signal
+RF (2.4GHz)
+receivers measure ToA
+Mulrilateration using ToA measurements
+
+zhi wang
+3d
+Combines TDOA and TOA
+beacons connected over wifi
+beacons calibrated manually(boo)
+linear frequency modulated signal which is CSS i guess

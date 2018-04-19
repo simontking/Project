@@ -1,0 +1,89 @@
+[An Ultrasonic Multiple-Access Ranging Core Based on
+Frequency Shift Keying Towards Indoor Localization]
+Distance estimation requires time synchronization, a correlator peak detector and a timer module.
+Time synchronization enables the devices to have a common time reference between transmitter and
+receiver, which is used to estimate the time of travel of an ultrasonic signal. In our implementation,
+we choose to synchronize the devices by means of wires. The transmitter pulls the wire to a logic “1”
+while sending and to “0” when idle. The receiver synchronizes itself against the transition from “0” to
+“1”, and the correlator calculates the signal equality against a given orthogonal code. When the signal
+shows a strong correlation with the code, a correlation peak occurs. The time difference between the time
+synchronization and the correlation peak is proportional to the distance between transmitter and receiver.
+In order to keep track of this time difference, a module keeps track of the highest correlation peak time.
+
+[CSI-Based Indoor Localization]
+RSSI-based
+schemes have been widely used to provide location-aware
+services in WLAN. However, in this paper, we observe that
+RSSI is roughly measured and easily affected by the
+multipath effect which is unreliable. We then use the finegrained
+information, that is, CSI, which explores the
+frequency diversity characteristic in OFDM systems to
+build the indoor localization system FILA. In FILA, we
+process the CSI of multiple subcarriers in a single packet as
+effective CSI value CSIeff , and develop a refined indoor
+radio propagation model to represent the relationship
+between CSIeff and distance. Based on the CSIeff , we
+then design a new fingerprinting method that leverages the
+frequency diversity
+
+[Improving the accuracy of ultrasound-based localisation systems]
+Distance is measured using the difference in time-offlight
+of RF signals and ultrasound signals. The time
+difference for travelling a distance d between the
+ultrasound signal and the radio signal is
+t ¼ tus  trf ¼ d
+vultrasound
+ d
+vradio
+:
+For a distance d of 10 m, the radio signal needs
+about trf  30 ns. The ultrasound signal, however,
+will need about tuf  30 ms. As trf << tus, trf can
+safely be omitted from the above term. Unfortunately,
+the speed of sound is not constant. Indoors it
+varies mainly with temperature.
+
+
+The beacons simply sent a constant ultrasound ‘‘tone’’
+for a short period of time. The receiver should ideally
+detect this tone right at its first ‘‘edge’’. In practice, it
+took the tone decoder several milliseconds to detect
+the incoming carrier tone. With this setup, the distance
+measurements had errors in the range of several tens of
+centimetres for perfectly aligned ultrasound transmitters
+and receivers. When the ultrasound parts were
+only slightly misaligned, we had even worse readings
+(see also [13]). We were able to improve the system by
+discarding the analogue tone decoder. Instead, we fed
+the amplified input signal to a comparator circuit. The
+output is a binary signal that was directly fed into a
+microcontroller’s capture unit. Tone detection was
+done in software [14]. We recently became aware that
+Cricket changed to the same technique [13, 15]. The
+results were promising for aligned ultrasound transmitters/receivers:
+all measurements were within ±2 cm
+of the actual distance. Measurement errors grew with
+the misalignment of the transceivers. When misaligned
+by more than 35, the measurements became completely
+unreliable. Our current approach is to use pulse
+compression on the ultrasound channel to get accurate
+distance measurements
+
+[Improving the accuracy of ultrasound-based localisation systems]
+Using a sampling rate of 160 kHz, a theoretical bestcase
+resolution of about 2 mm could be expected.
+However as the signal is phase coded, the resolution
+cannot be less than the wavelength of the ultrasound
+signal, which is about 8.6 mm. To achieve this accuracy
+in practice, very long PN sequences are needed, which
+would affect memory and CPU needs as well as the
+position update rate. The chip rate of the signal gives
+an absolute worst-case resolution (upper bound) of
+20 cm.
+
+Multiple measurements may be obtained from various anchors and subsequently
+combined in an optimal or suboptimal way to obtain an estimate of the position of
+the mobile device. This process of obtaining a position estimate from multiple observations
+is usually referred to as multilateration. Whenever the number of observations
+reduces to three, then the process is referred to as trilateration, or triangulation, which
+corresponds to classical geometric concepts.

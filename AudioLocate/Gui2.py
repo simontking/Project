@@ -51,12 +51,21 @@ def animate(i):
     sample = np.load('sampledata')
 
     ax1.clear()
+<<<<<<< HEAD
     ax1.plot(np.arange(0, len(acor1)), acor1)
 
     # ax1.plot(np.arange(0,len(acor2)),acor2)
     t0 = np.arange(0, len(sample)) / 44100;
     t1 = np.arange(0, len(firstSample)) / 44100;
     t2 = np.arange(0, len(secondSample)) / 44100;
+=======
+    ax1.plot(np.arange(0,len(acor1)),acor1)    
+    
+    #ax1.plot(np.arange(0,len(acor2    return multiarray.correlate2(a, v, mode))),acor2)
+    t0 = np.arange(0,len(sample))/44100;
+    t1 = np.arange(0,len(firstSample))/44100;
+    t2 = np.arange(0,len(secondSample))/44100;
+>>>>>>> 950b8d5c925265f51a0d2dd35d00e3884318bd10
     ax2.clear()
     ax2.plot(t1, firstSample)
     ax2.plot(t2, secondSample)

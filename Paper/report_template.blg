@@ -2,4 +2,17 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: report_template.aux
 The style file: biblatex.bst
 Database file #1: report_template-blx.bib
 Database file #2: references.bib
+I was expecting a `,' or a `}'---line 82 of file references.bib
+ :   author={Piontek, Hubert and Seyffer, Matthias and Kaiser, J{\}}
+ :                                                                  o}rg},
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 524 of file references.bib
+ :   author={Edfors, Ove and Sandell, Magnus and Beek, Jaap van de and Landstr{\}}
+ :                                                                                o}m, Daniel and Sj{\}}o}berg, Frank},
+I'm skipping whatever remains of this entry
+Repeated entry---line 634 of file references.bib
+ : }@inproceedings{alsharif2017zadoff
+ :                                   ,
+I'm skipping whatever remains of this entry
 Biblatex version: 3.3
+(There were 3 error messages)
