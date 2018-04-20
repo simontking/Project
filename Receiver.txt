@@ -28,3 +28,5 @@ an update rate that is comparable to the method of
 simultaneously sending long codes. The increased effort
 in decoding simultaneously sent ultrasound signals
 does not achieve enough improvement to justify itself.
+
+DFT[dftandsinusoids]

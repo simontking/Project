@@ -1,3 +1,13 @@
+ Range measurements: The measurements aim to
+find the differences of the TOA of the signals from the
+transmitter to the three receivers whose locations are
+known. Each range difference determines a hyperbola, and
+the intersection point of the two hyperbolas is the estimated
+location of the querying node. For each receiver, the
+relative TOA is determined by applying correlation between
+the received signal and the template signal. 
+
+
 [An Ultrasonic Multiple-Access Ranging Core Based on
 Frequency Shift Keying Towards Indoor Localization]
 Distance estimation requires time synchronization, a correlator peak detector and a timer module.
@@ -87,3 +97,23 @@ the mobile device. This process of obtaining a position estimate from multiple o
 is usually referred to as multilateration. Whenever the number of observations
 reduces to three, then the process is referred to as trilateration, or triangulation, which
 corresponds to classical geometric concepts.
+
+[Indoor Localisation Using a Context-Aware Dynamic]
+We presented a context-aware tracking system that tracked
+users in an indoor environment. The context-aware system
+used a wireless smart metering network that consisted of
+power meter nodes placed throughout a building. A user carried
+a mobile node that tracked their current position. A
+smartphone could be used to view the mobile nodes current
+position, via a cellular or wireless LAN connection.
+The context-aware tracking system localised a person’s
+position by combining wireless trilateration, a dynamic position
+tracking model, and a probability density map. The integral
+use of these three factors allowed the context-aware
+tracking system to achieve reasonable localisation accuracy
+with a sparsely and irregularly dispersed wireless network.
+
+[Profiling-Based Indoor Localization Schemes]
+based on a given set of RSS readings Φ, this map
+is explored to search for a set of Knearest neighbors (KNN)
+of Φ in terms of minimizing the RSS distance.

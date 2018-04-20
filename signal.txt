@@ -141,3 +141,56 @@ number of bits and the result is also a valid Golay codeword;
 [24,12] codewords is always eight or more bits;
 . Error Correction. The correction mechanism of Golay decoding can detect and
 correct up to three bit errors per codeword.
+
+[An Efficient Zadoff-Chu Based
+Communication System]
+A Zadoff–Chu (ZC) sequence, also referred to as Chu
+sequence or Frank–Zadoff–Chu (FCZ) sequence, is a
+complex-valued mathematical sequence which, when
+applied to radio signals, gives rise to an electromagnetic
+signal of constant amplitude, whereby cyclically shifted
+versions of the sequence imposed on a signal result in zero
+correlation with one another at the receiver. A generated
+Zadoff–Chu sequence that has not been shifted is known
+as a "root sequence".
+ZC sequences exhibits the property that cyclically shifted
+versions of itself are orthogonal to one another if each
+cyclic shift is greater than the combined propagation delay
+and multi-path delay-spread of that signal between the
+transmitter and receiver, in the time domain.
+ZC sequences are used in the 3GPP LTE [3] air interface
+in the Primary Synchronization Signal, random access
+preamble, uplink control channel, uplink traffic channel
+and sounding reference signals . The spectrum of the ZC
+sequence is shownn Fig.3.
+Fig.3. Spectrum of the ZC sequence
+Two modifications are required for using this spectrum as
+pilot. One is a spectrum that is constant in the centre is
+needed. For this the spectrum is shifted by letting the
+carriers having amplitude near zero be on the side lobes as
+shown in Fig. 4.
+Fig.4. Spectrum of the ZC sequence with FFT shift.
+The second modification is to create three cells equal to
+zero (to carry data) for every cell used by the pilot and
+spreading the overall spectrum over an 8k symbol. For this
+the time domain sequence obtained from the IFFT of the
+previous spectrum (Fig. 2.) is repeated four times
+
+[Generalized Cross-Correlation Properties
+of Chu Sequences]
+In this paper, we investigated detailed cross-correlation properties
+for Chu sequences and obtained that i) the possible values
+of the magnitude of the cross-correlation function depends
+only on the GCD between and , ii) the maximum
+magnitude distribution function among a given Chu sequence
+set in a closed form as in Theorem 3, which shows that the maximum
+magnitude distribution tends to spread out as the number
+of divisors increases, and iii) the upper and lower bounds on
+442 IEEE TRANSACTIONS ON INFORMATION THEORY, VOL. 58, NO. 1, JANUARY 2012
+the maximum number of available Chu sequences satisfying a
+given cross-correlation constraint and the corresponding partial
+Chu sequence set construction algorithm. Numerical examples
+show that the proposed bounds are quite tight and the proposed
+construction algorithm is near-optimal up to fairly large value
+of .
+A

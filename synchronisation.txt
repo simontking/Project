@@ -17,3 +17,19 @@ synchronizes with the Network Master over a single hop
 using its 802.15.4 radio. Once the beacon is synchronized,
 it plays back the ultrasonic signal stored in its flash memory
 at the beginning of its designated TDMA slot.
+
+[Analysis of the Frequency Offset Effect on Zadoff-Chu Sequence Timing
+Performance]
+Signals providing good timing estimation must possess a good autocorrelation property [1]. Wireless
+communication systems almost unexceptionally employ sequences that have good autocorrelation properties
+to fulfill such a goal.
+A ZC sequence is well known for its perfect autocorrelation properties. As a result, ZC sequences have
+found their wide applications in modern cellular systems as synchronization sequences, such as the LTE
+Primary Synchronization Signal (PSS) and the Random Access Channel (RACH) signal. However, the perfect
+time autocorrelation is in general not true in practical applications when a frequency synchronization error is
+present between the transmitter and the receiver. That is, the perfect autocorrelation property is lost under
+non-zero frequency offset, consequently degrading the timing performance of a ZC sequence. The severity of
+the degradation depends on both the root parameter of a ZC sequence and the time uncertainty
+
+[Coarse Time Synchronization Utilizing Symmetric
+Properties of Zadoff-Chu Sequences]

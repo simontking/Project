@@ -49,3 +49,56 @@ thanks to the use of wide signal-strength fingerprints that include readings of 
 GSM channels in addition to the 6-strongest cells. We also showed that the localization
 performance can be further improved by carefully selecting a subset of highly relevant
 channels to be used for fingerprinting matching.
+[Robust wireless signal indoor localization]
+an approximation method using Bluetooth signals in conjunction with a fuzzy classifier. Bluetooth RSSI
+
+[Indoor Localisation Using a Context-Aware Dynamic]
+RSSI/ We used the ZigBee/
+802.15.4 wireless communications protocol to implement
+our smart meter network. ZigBee is a low data rate wireless
+communications protocol that can operate on devices with
+limited computing or power res
+
+[Performance of time-difference-of-arrival ultra
+wideband indoor localisation]
+ The
+Gaussian pulse generator, which is triggered by the 10 MHz
+clock, generates a UWB pulse with centre frequency around
+4 GHz. 
+
+[Ultra-wideband-based multilateration technique for
+indoor localisation]
+ proposed solution as time reflection of arrival (TROA). They demonstrate in this
+study how the position estimation error is improved upon by carefully considering the inherent properties of the UWB technology
+and the reflection properties of transmitted UWB signalsThis paper presented a novel UWB-driven multilateration
+technique for position estimation in an indoor environment.
+The presented approach exploits the inherent properties of
+UWB signal propagation and its definition is in conjunction
+with the operational principles of the lesser studied TSOA
+position estimation technique
+
+[TDOA-Based Localization Using Interacting
+Multiple Model Estimator and Ultrasonic
+Transmitter/Receiver]
+360 mobile transmitter, receiver anchors
+
+[INDOOR LOCATION BASED ON IEEE 802.11 ROUNDTRIP
+TIME MEASUREMENTS WITH TWO-STEP NLOS
+MITIGATION]
+In this paper, a complete location scheme based on RTT measurements
+is proposed, analyzed and put into practice in a rich multipath indoor
+environment. The PCB proposed in [12] has been taken as RTT
+measuring system, and an IEEE 802.11 wireless infrastructure, already
+deployed, has been used as indoor wireless technology.
+
+[Implementing Primary Synchronization Channel in Mobile Cell
+Selection 4G LTE-A Network]
+In this paper, we presented an Implementing PSS in
+mobile cell searching 4G, which has been proposed
+cell search and selection for 4G LTE-A system. The
+proposed includes synchronizations and cell
+identification by using the Zadoff-chu Algorithm and
+standard roots , when the based on P-SCH and S-SCH
+cell specific pilot symbols, respectively. Frequency
+synchronization performance can be improved through
+oversampling SCH at the receiver
