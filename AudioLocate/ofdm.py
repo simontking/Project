@@ -6,17 +6,18 @@ import sys
 import signalgeneration as sig
 
 #size of constellation (N symbols per frame; N frames per constellation)
-N=8
-x=2*numpy.random.random_integers(0,1,(N,N))-1 #real part of symbol matrix 's'
-y=2*numpy.random.random_integers(0,1,(N,N))-1 #imaginary part of symbol matrix 's'
+N=7 #number of data symbols
+k=1 #
+A=1
+l=4
+#x=2*numpy.random.random_integers(0,1,(N,N))-1 #real part of symbol matrix 's'
+#y=2*numpy.random.random_integers(0,1,(N,N))-1 #imaginary part of symbol matrix 's'
 
 s=x+1j*y #complex matrix (x+y) of QPSK symbols
 
-#s = sig.generateZCSample(53,1)
-t,w=(numpy.empty((N,N), dtype=complex) for i in range(2)) #generate two empty, NxN arrays for use later
-
-
+s = sig.generateZCSample(N,1)
 print('s=%s',s)
+y= numpy.empty((N,l), dtype=complex) #generate two empty, NxN arrays for use later
 
 # definitions for the plot axe
 left, width=0.1,0.65

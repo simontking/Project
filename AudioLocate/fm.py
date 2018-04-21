@@ -1,120 +1,151 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import signalgeneration as sig
+from scipy.signal import hilbert, remez, lfilter, decimate
 
-modulator_frequency = 4.0
-carrier_frequency = 20.0
+fc = 150.0
 modulation_index = 1.0
-sample_rate = 10000.0
-sample_period = 1/sample_rate
-ZC_N = 5
-bandwidth = 7.0
+fs = 1500.0
+sample_period = 1/fs
+ZC_N = 7
+fbw = 15
 
 zcsig = sig.generateZCSample(ZC_N ,1)
 print (zcsig)
 
-time = np.arange(sample_rate) / sample_rate
+time = np.arange(fs) / fs
 
-carrier = np.cos(2.0 * np.pi * carrier_frequency * time)
+carrier = np.cos(2.0 * np.pi * fc * time)
 real_modulator = np.zeros_like(carrier)
 real_product = np.zeros_like(carrier)
+product = np.zeros_like(carrier)
 
 imag_modulator = np.zeros_like(carrier)
 imag_product = np.zeros_like(carrier)
 
 for i, t in enumerate(time):
-    x = np.int(i/(sample_rate/ZC_N))
+    x = np.int(i/(fs/ZC_N))
     real_modulator[i] = zcsig.real[x]
     imag_modulator[i] = zcsig.imag[x]
 
 for i, t in enumerate(time):
-    real_product[i] = np.cos((2.0 * np.pi * (carrier_frequency + (real_modulator[i]*(bandwidth/2))) * t) )
-    imag_product[i] = np.sin((2.0 * np.pi * (carrier_frequency + (imag_modulator[i]*(bandwidth/2))) * t) )
+    real_product[i] = np.cos((2.0 * np.pi * fc * t) + (real_modulator[i]*(fbw)))
+    imag_product[i] = np.sin((2.0 * np.pi * fc * t) + (imag_modulator[i]*(fbw))) 
 
-product = (real_product - imag_product) +2
-
-real_result = np.zeros_like(carrier)
-imag_result = np.zeros_like(carrier)
-T = 1 / carrier_frequency
-
-mod_fact = 1.0 / 100.0
-original_theta = 2.0 * np.pi * (carrier_frequency + mod_fact * product) * time
-yc = np.cos(original_theta)
-
-theta = np.arccos(yc)
-
-# Calculate the samples per quadrant
-N = T / sample_period 
-Nq = int(N / 4)
-
-# Solve the angles for Yc's 1st cycle
-quadrant1_theta = theta[0:Nq]
-quadrant2_theta = np.pi - theta[Nq:Nq*2]
-quadrant3_theta = np.pi - theta[Nq*2:Nq*3]
-quadrant4_theta = 2.0 * np.pi + theta[Nq*3:int(N)]
-theta_corrected = np.hstack((quadrant1_theta, quadrant2_theta, quadrant3_theta, quadrant4_theta))
-
-number_of_cycles = carrier_frequency  
-
-# This is our tally
-cycle = 1
-pi_multiple = 2.0
-cycle_start_index = Nq*4
-N=int(N)
-while cycle < number_of_cycles:
-    
-    # Calculate which sample falls into what quadrant
-    quad1_start = cycle_start_index
-    quad1_end = quad1_start + Nq
-    
-    quad23_start = quad1_end
-    quad23_end = quad23_start + Nq * 2
-    
-    quad4_start = quad23_end
-    quad4_stop = cycle_start_index + N
-    
-    # Solve for the angles for Yc's 2nd, 3rd, ... cycles
-    quadrant1_theta = theta[quad1_start:quad1_end] + pi_multiple * np.pi 
-    quadrant23_theta = np.pi - theta[quad23_start:quad23_end] + pi_multiple * np.pi
-    quadrant4_theta = 2.0 * np.pi + theta[quad4_start:quad4_stop] + pi_multiple * np.pi 
-    theta_corrected = np.hstack((theta_corrected, quadrant1_theta, quadrant23_theta, quadrant4_theta))
-    
-    cycle = cycle + 1
-    
-    
-    # Calculate a distinct offset for each cycle 
-    pi_multiple = pi_multiple + 2.0
-    
-    cycle_start_index = cycle_start_index + N
-    
-product_demod = theta_corrected / (2.0 * np.pi * time *  mod_fact) - carrier_frequency / mod_fact
-
-# Remove offset that was added before modulation
-product_demod = product_demod - 2
-
-plt.subplot(3, 2, 1)
-plt.title('Frequency Modulation')
-plt.plot(real_modulator)
-plt.ylabel('Amplitude')
-plt.xlabel('Modulator signal')
-plt.subplot(3, 2, 3)
-plt.plot(real_product)
-plt.ylabel('Amplitude')
-plt.xlabel('Carrier signal')
-plt.subplot(3, 2, 2)
-plt.plot(imag_modulator)
-plt.ylabel('Amplitude')
-plt.xlabel('Output signal')
-plt.subplot(3, 2, 4)
-plt.plot(imag_product)
-plt.ylabel('Amplitude')
-plt.xlabel('Output signal')
-plt.subplot(3, 2, 5)
+product = (real_product + imag_product)
+plt.figure()
+plt.subplot(3, 1, 1)
+plt.plot(zcsig)
+plt.subplot(3, 1, 2)
+plt.plot(real_product,'r')
+plt.plot(imag_product,'b')
+plt.subplot(3, 1,3)
 plt.plot(product)
-plt.ylabel('Amplitude')
-plt.xlabel('Output signal')
-plt.subplot(3, 2, 6)
+
+##for i, t in enumerate(time):
+##    x = np.int(i/(fs/ZC_N))
+##    product[i] = zcsig[x]  * np.exp(-1j*2*np.pi*(fc)*t)
+##    
+product_demod = np.zeros_like(product).astype("complex64")
+chap = np.zeros_like(product).astype("complex64")
+
+real_result = np.cos((2.0 * np.pi * (fc) * t)) * product
+z = hilbert(real_result)
+inst_ampl = np.abs(z)
+inst_phase = np.unwrap(np.angle(z))
+inst_freq = np.diff(inst_phase)/(2*np.pi)*fs
+##plt.figure()
+##for v in zcsig:
+##    plt.polar([0,np.angle(v)], [0,np.abs(v)], marker='o')
+plt.figure()
+plt.subplot(3, 1, 1)
+plt.plot(inst_ampl)
+plt.subplot(3, 1, 2)
+plt.plot(inst_phase)
+plt.subplot(3, 1,3)
+plt.plot(inst_freq)
+
+imag_result = np.sin((2.0 * np.pi * (fc) * t)) * product
+z = hilbert(imag_result)
+inst_ampl = np.abs(z)
+inst_phase = np.unwrap(np.angle(z))
+inst_freq = np.diff(inst_phase)/(2*np.pi)*fs
+plt.figure()
+plt.subplot(3, 1, 1)
+plt.plot(inst_ampl)
+plt.subplot(3, 1, 2)
+plt.plot(inst_phase)
+plt.subplot(3, 1,3)
+plt.plot(inst_freq)
+plt.show()
+
+#real_result = np.cos((2.0 * np.pi * (fc) * t)) * product
+#imag_result = np.sin((2.0 * np.pi * (fc) * t)) * 
+for i, t in enumerate(time):
+    #x = np.int(i/(fs/ZC_N))
+    product_demod[i] = product[i]  * np.exp(-1j*2*np.pi*(fc)*t)
+plt.figure()
+result = np.zeros(ZC_N).astype("complex64")
+for k in range(ZC_N):
+    demod_block = product_demod[k*np.int(len(product_demod)/ZC_N):(1+k)*np.int(len(product_demod)/ZC_N)]
+    plt.subplot(ZC_N, 2, 2*k+1)
+    plt.plot(demod_block)
+    fftinfo = np.abs(np.fft.fft(demod_block))
+    chap[k*np.int(len(product_demod)/ZC_N):(1+k)*np.int(len(product_demod)/ZC_N)] = fftinfo
+    plt.subplot(ZC_N, 2, 2*k+2)
+    plt.plot(fftinfo)
+    I = np.argmax(fftinfo)
+    tmp = demod_block[1::1] * np.conjugate(demod_block[0:-1:1]);
+  # Record the angle of the complex difference vectors
+    print(  np.angle(tmp));
+    result[k] = (np.abs(fftinfo[I])/(fs/fc)) + 1j*np.angle(fftinfo[I])
+    
+print(result)
+fc1 = np.exp(-1j*2*np.pi*(fc)*time)
+#print(fc1)
+x2 = np.array(product * fc1).astype("complex64")
+lpfr = remez(64, [0,fbw,fbw+(fs/2 - fbw)/4, fs/2], [1,0], Hz=fs)
+x3 = lfilter(lpfr,1.0,x2)
+
+dec_rate = 5
+print('dec',dec_rate)
+x4 = x3[0::dec_rate]
+fs_y = fs/dec_rate
+print('fsy',fs_y)
+x42 = decimate(x2, dec_rate)
+plt.figure()
+plt.subplot(4, 1, 1)
 plt.plot(product_demod)
-plt.ylabel('Amplitude')
-plt.xlabel('Output signal')
+plt.subplot(4, 1, 2)
+plt.plot(x2)
+plt.subplot(4, 1, 3)
+plt.plot(x3)
+plt.subplot(4, 1,4)
+plt.plot(x4)
+
+tmp = np.array(x4[1:]*np.conj(x4[:-1])).astype("complex64")
+x5=np.angle(tmp)
+
+d = fs_y * 75e-6
+x = np.exp(-1/d)
+b=[1-x]
+a=[1,-x]
+x6 = lfilter(b,a,x5)
+
+dec_audio = int(fs_y/fs)
+print(dec_audio)
+
+x7 = decimate(x6, 5)
+#print(x7)
+x8 = x7*10000/np.max(np.abs(x7))
+plt.figure()
+plt.subplot(4, 1, 1)
+
+plt.plot(tmp)
+plt.subplot(4, 1, 2)
+plt.plot(x6)
+plt.subplot(4, 1, 3)
+plt.plot(x7)
+plt.subplot(4, 1,4)
+plt.plot(x8)
 plt.show()
