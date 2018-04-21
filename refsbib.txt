@@ -1,0 +1,357 @@
+@article{xiao2016survey,
+  title={A survey on wireless indoor localization from the device perspective},
+  author={Xiao, Jiang and Zhou, Zimu and Yi, Youwen and Ni, Lionel M},
+  journal={ACM Computing Surveys (CSUR)},
+  volume={49},
+  number={2},
+  pages={25},
+  year={2016},
+  publisher={ACM}
+}
+@inproceedings{lazik2015alps,
+  title={ALPS: A bluetooth and ultrasound platform for mapping and localization},
+  author={Lazik, Patrick and Rajagopal, Niranjini and Shih, Oliver and Sinopoli, Bruno and Rowe, Anthony},
+  booktitle={Proceedings of the 13th ACM Conference on Embedded Networked Sensor Systems},
+  pages={73--84},
+  year={2015},
+  organization={ACM}
+}
+@article{Remya2016zc,
+  title={An Efficient Zadoff-Chu Based Communication System},
+  author={Remya B, Ashish Francis, Vimal Raj V},
+  journal={International Journal of Innovative Research in Electrical, Electronics, Instrumentation and Control Engineering},
+  volume={4},
+  number={9},
+  year={2016}
+}
+@article{anjana2015experimental,
+  title={An experimental study on channel estimation and synchronization to reduce error rate in OFDM using GNU radio},
+  author={Anjana, C and Sundaresan, S and Zacharia, Tessy and Gandhiraj, R and Soman, KP},
+  journal={Procedia Computer Science},
+  volume={46},
+  pages={1056--1063},
+  year={2015},
+  publisher={Elsevier}
+}
+@inproceedings{piccinni2016improved,
+  title={An improved technique based on Zadoff-Chu sequences for distance measurements},
+  author={Piccinni, G and Avitabile, G and Coviello, G},
+  booktitle={Radio and Antenna Days of the Indian Ocean (RADIO), 2016 IEEE},
+  pages={1--2},
+  year={2016},
+  organization={IEEE}
+}
+@misc{edfors1997introduction,
+  title={An introduction to orthogonal frequency-division multiplexing},
+  author={Edfors, Ove and Sandell, Magnus and Beek, Jaap van de and Landstr{\""o}m, Daniel and Sj{\""o}berg, Frank},
+  year={1997},
+  publisher={Lule{\aa} tekniska universitet}
+}
+@article{segers2015ultrasonic,
+  title={An ultrasonic multiple-access ranging core based on frequency shift keying towards indoor localization},
+  author={Segers, Laurent and Van Bavegem, David and De Winne, Sam and Braeken, An and Touhafi, Abdellah and Steenhaut, Kris},
+  journal={Sensors},
+  volume={15},
+  number={8},
+  pages={18641--18665},
+  year={2015},
+  publisher={Multidisciplinary Digital Publishing Institute}
+}
+@article{hua2014analysis,
+  title={Analysis of the frequency offset effect on Zadoff--Chu sequence timing performance},
+  author={Hua, Min and Wang, Mao and Yang, Kristo Wenjie and Zou, Kingsley Jun},
+  journal={IEEE Transactions on Communications},
+  volume={62},
+  number={11},
+  pages={4024--4039},
+  year={2014},
+  publisher={IEEE}
+}
+@article{blumenstein2018coarse,
+  title={Coarse Time Synchronization Utilizing Symmetric Properties of Zadoff-Chu Sequences},
+  author={Blumenstein, Jiri and Bobula, Marek},
+  journal={IEEE Communications Letters},
+  year={2018},
+  publisher={IEEE}
+}
+@article{chen2010composite,
+  title={Composite interpolated fast Fourier transform with the Hanning window},
+  author={Chen, Kui Fu and Mei, Shu Li},
+  journal={IEEE Transactions on Instrumentation and Measurement},
+  volume={59},
+  number={6},
+  pages={1571--1579},
+  year={2010},
+  publisher={IEEE}
+}
+@article{wu2013csi,
+  title={CSI-based indoor localization},
+  author={Wu, Kaishun and Xiao, Jiang and Yi, Youwen and Chen, Dihu and Luo, Xiaonan and Ni, Lionel M},
+  journal={IEEE Transactions on Parallel and Distributed Systems},
+  volume={24},
+  number={7},
+  pages={1300--1309},
+  year={2013},
+  publisher={IEEE}
+}
+@article{minami2007design,
+  title={Design and implementation of a fully distributed ultrasonic positioning system},
+  author={Minami, Masateru and Morikawa, Hiroyuki and Aoyama, Tomonori},
+  journal={Electronics and Communications in Japan (Part III: Fundamental Electronic Science)},
+  volume={90},
+  number={6},
+  pages={17--26},
+  year={2007},
+  publisher={Wiley Online Library}
+}
+@article{yoo2009fast,
+  title={Fast normalized cross-correlation},
+  author={Yoo, Jae-Chern and Han, Tae Hee},
+  journal={Circuits, systems and signal processing},
+  volume={28},
+  number={6},
+  pages={819},
+  year={2009},
+  publisher={Springer}
+}
+@article{barshan2000fast,
+  title={Fast processing techniques for accurate ultrasonic range measurements},
+  author={Barshan, Billur},
+  journal={Measurement Science and technology},
+  volume={11},
+  number={1},
+  pages={45},
+  year={2000},
+  publisher={IOP Publishing}
+}
+@article{priya2013frequency,
+  title={Frequency synchronization in OFDM system},
+  author={Priya, C Geetha and Vasumathi, AM},
+  journal={Journal of signal and Information Processing},
+  volume={4},
+  number={03},
+  pages={138},
+  year={2013},
+  publisher={Scientific Research Publishing}
+}
+@article{kang2012generalized,
+  title={Generalized cross-correlation properties of Chu sequences},
+  author={Kang, Jae Won and Whang, Younghoon and Ko, Byung Hoon and Kim, Kwang Soon},
+  journal={IEEE Transactions on Information Theory},
+  volume={58},
+  number={1},
+  pages={438--444},
+  year={2012},
+  publisher={IEEE}
+}
+@article{shu2016gradient,
+  title={Gradient-based fingerprinting for indoor localization and tracking},
+  author={Shu, Yuanchao and Huang, Yinghua and Zhang, Jiaqi and Cou{\'e}, Philippe and Cheng, Peng and Chen, Jiming and Shin, Kang G},
+  journal={IEEE Transactions on Industrial Electronics},
+  volume={63},
+  number={4},
+  pages={2424--2433},
+  year={2016},
+  publisher={IEEE}
+}
+@article{hammersound,
+  title={Sound Based Localization System for Safety Applications in Underground Mining},
+  author={Hammer, F and Pichler, M and Hesch, C}
+}
+@article{shukurimplementing,
+  title={Implementing Primary Synchronization Channel in Mobile Cell Selection 4G LTE-A Network},
+  author={Shukur, Murtadha Ali Nsaif and Pahwa, Kuldip and Sinha, HP}
+}
+@article{piontek2007improving,
+  title={Improving the accuracy of ultrasound-based localisation systems},
+  author={Piontek, Hubert and Seyffer, Matthias and Kaiser, J{\""o}rg},
+  journal={Personal and Ubiquitous Computing},
+  volume={11},
+  number={6},
+  pages={439--449},
+  year={2007},
+  publisher={Springer}
+}
+@article{moutinho2016indoor,
+  title={Indoor global localisation in anchor-based systems using audio signals},
+  author={Moutinho, Jo{\~a}o and Freitas, Diamantino and Ara{\'u}jo, Rui Esteves},
+  journal={The Journal of Navigation},
+  volume={69},
+  number={5},
+  pages={1024--1040},
+  year={2016},
+  publisher={Cambridge University Press}
+}
+@article{gorak2016indoor,
+  title={Indoor Localisation Based on GSM Signals: Multistorey Building Study},
+  author={G{\'o}rak, Rafa{\l} and Luckner, Marcin and Okulewicz, Micha{\l} and Porter-Sobieraj, Joanna and Wawrzyniak, Piotr},
+  journal={Mobile Information Systems},
+  volume={2016},
+  year={2016},
+  publisher={Hindawi Publishing Corporation}
+}
+@article{bahillo2009indoor,
+  title={Indoor location based on IEEE 802.11 round-trip time measurements with two-step NLOS mitigation},
+  author={Bahillo Martinez, Alfonso and Mazuelas Franco, Santiago and Prieto Tejedor, Javier and Lorenzo Toledo, Ruben Mateo and Fernandez Reguero, Patricia and Abril, Evaristo Jose},
+  journal={Progress In Electromagnetics Research},
+  volume={15},
+  pages={285--306},
+  year={2009},
+  publisher={EMW Publishing}
+}
+@inproceedings{lazik2012indoor,
+  title={Indoor pseudo-ranging of mobile devices using ultrasonic chirps},
+  author={Lazik, Patrick and Rowe, Anthony},
+  booktitle={Proceedings of the 10th ACM Conference on Embedded Network Sensor Systems},
+  pages={99--112},
+  year={2012},
+  organization={ACM}
+}
+@inproceedings{ens2014low,
+  title={Low-power simplex ultrasound communication for indoor localization},
+  author={Ens, Alexander and Reindl, Leonhard M and Janson, Thomas and Schindelhauer, Christian},
+  booktitle={Signal Processing Conference (EUSIPCO), 2014 Proceedings of the 22nd European},
+  pages={731--735},
+  year={2014},
+  organization={IEEE}
+}
+@book{oliphant2006guide,
+  title={A guide to NumPy},
+  author={Oliphant, Travis E},
+  volume={1},
+  year={2006},
+  publisher={Trelgol Publishing USA}
+}
+@article{lymberopoulos2015microsoft,
+  title={Microsoft indoor localization competition: Experiences and lessons learned},
+  author={Lymberopoulos, Dimitrios and Liu, Jie and Yang, Xue and Choudhury, Romit Roy and Sen, Souvik and Handziski, Vlado},
+  journal={GetMobile: Mobile Computing and Communications},
+  volume={18},
+  number={4},
+  pages={24--31},
+  year={2015},
+  publisher={ACM}
+}
+@article{pereztdoa,
+  title={TDoA-based Localization Using Enhanced Multilateration},
+  author={Perez-Cruz, Fernando and Lin, Chih-Kuang and Huang, Howard}
+}
+@article{remyaofdm,
+  title={OFDM Systems Using ZC Sequences},
+  author={Remya, B and Francis, Ashish}
+}
+@article{minn2000timing,
+  title={On timing offset estimation for OFDM systems},
+  author={Minn, Hlaing and Zeng, Mao and Bhargava, Vijay K},
+  journal={IEEE Communications letters},
+  volume={4},
+  number={7},
+  pages={242--244},
+  year={2000},
+  publisher={IEEE}
+}
+@article{khyam2017orthogonal,
+  title={Orthogonal Chirp-Based Ultrasonic Positioning},
+  author={Khyam, Mohammad Omar and Ge, Shuzhi Sam and Li, Xinde and Pickering, Mark},
+  journal={Sensors},
+  volume={17},
+  number={5},
+  pages={976},
+  year={2017},
+  publisher={Multidisciplinary Digital Publishing Institute}
+}
+@article{xu2011performance,
+  title={Performance of time-difference-of-arrival ultra wideband indoor localisation},
+  author={Xu, J and Ma, M and Law, CL},
+  journal={IET science, measurement \& technology},
+  volume={5},
+  number={2},
+  pages={46}
+}
+@article{chu1972polyphase,
+  title={Polyphase codes with good periodic correlation properties (corresp.)},
+  author={Chu, David},
+  journal={IEEE Transactions on information theory},
+  volume={18},
+  number={4},
+  pages={531--532},
+  year={1972},
+  publisher={IEEE}
+}
+@article{glover2011python,
+  title={Python for audio signal processing},
+  author={Glover, John C and Lazzarini, Victor and Timoney, Joseph},
+  year={2011}
+}
+@inproceedings{gul2012robust,
+  title={Robust synchronization for OFDM employing Zadoff-Chu sequence},
+  author={Gul, Malik Muhammad Usman and Lee, Sungeun and Ma, Xiaoli},
+  booktitle={Information Sciences and Systems (CISS), 2012 46th Annual Conference on},
+  pages={1--6},
+  year={2012},
+  organization={IEEE}
+}
+@article{kong2015robust,
+  title={Robust wireless signal indoor localization},
+  author={Kong, Liang and Bauer, Gavin and Hale, John},
+  journal={Concurrency and Computation: Practice and Experience},
+  volume={27},
+  number={11},
+  pages={2839--2850}
+}
+@article{zhang2013tdoa,
+  title={TDOA-based localization using interacting multiple model estimator and ultrasonic transmitter/receiver},
+  author={Zhang, Rui and Hoflinger, Fabian and Reindl, Leonhard},
+  journal={IEEE Transactions on Instrumentation}
+}
+@article{tripathy2015fourier,
+  title={THE FOURIER TRANSFORM OF RECTANGULAR FUNCTION},
+  author={Tripathy, SC and Jakonen, Sami},
+  journal={International Journal of Mathematics, Game Theory, and Algebra},
+  volume={24},
+  number={4},
+  pages={289},
+  year={2015},
+  publisher={Nova Science Publishers, Inc.}
+}
+@article{jackson2013time,
+  title={Time-of-flight measurement techniques for airborne ultrasonic ranging},
+  author={Jackson, Joseph C and Summan, Rahul and Dobie, Gordon I and Whiteley, Simon M and Pierce, S Gareth and Hayward, Gordon},
+  journal={IEEE transactions on ultrasonics, ferroelectrics, and frequency control},
+  volume={60},
+  number={2},
+  pages={343--355},
+  year={2013},
+  publisher={IEEE}
+}
+@article{gul2015timing,
+  title={Timing and frequency synchronization for OFDM downlink transmissions using Zadoff-Chu sequences},
+  author={Gul, Malik Muhammad Usman and Ma, Xiaoli and Lee, Sungeun},
+  journal={IEEE Transactions on Wireless Communications},
+  volume={14},
+  number={3},
+  pages={1716--1729},
+  year={2015},
+  publisher={IEEE}
+}
+@inproceedings{hsiao2008two,
+  title={Two practical considerations of beacon deployment for ultrasound-based indoor localization systems},
+  author={Hsiao, Chun-Chieh and Huang, Polly},
+  booktitle={Sensor Networks, Ubiquitous and Trustworthy Computing}
+}
+@article{onalaja2014ultra,
+  title={Ultra-wideband-based multilateration technique for indoor localisation},
+  author={Onalaja, Oladimeji and Adjrad, Mounir and Ghavami, Mohammad},
+  journal={IET Communications},
+  volume={8},
+  number={10}
+}
+@inproceedings{lazik2015ultrasonic,
+  title={Ultrasonic time synchronization and ranging on smartphones},
+  author={Lazik, Patrick and Rajagopal, Niranjini and Sinopoli, Bruno and Rowe, Anthony},
+  booktitle={Real-Time and Embedded Technology and Applications Symposium (RTAS), 2015 IEEE},
+  pages={108--118},
+  year={2015},
+  organization={IEEE}
+}
+  
