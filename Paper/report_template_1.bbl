@@ -59,7 +59,7 @@
     \list{publisher}{1}{%
       {IEEE}%
     }
-    \strng{namehash}{WK+1}
+    \strng{namehash}{WKXJYY+1}
     \strng{fullhash}{WKXJYYCDLXNLM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -101,7 +101,7 @@
     \list{publisher}{1}{%
       {ACM}%
     }
-    \strng{namehash}{XJ+1}
+    \strng{namehash}{XJZZYY+1}
     \strng{fullhash}{XJZZYYNLM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -138,7 +138,7 @@
     \list{publisher}{1}{%
       {Wiley Online Library}%
     }
-    \strng{namehash}{MM+1}
+    \strng{namehash}{MMMHAT1}
     \strng{fullhash}{MMMHAT1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -176,7 +176,7 @@
     \list{publisher}{1}{%
       {Springer}%
     }
-    \strng{namehash}{PH+1}
+    \strng{namehash}{PHSMKJ1}
     \strng{fullhash}{PHSMKJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -213,7 +213,7 @@
     \list{publisher}{1}{%
       {Cambridge University Press}%
     }
-    \strng{namehash}{MJ+1}
+    \strng{namehash}{MJFDARE1}
     \strng{fullhash}{MJFDARE1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -224,6 +224,49 @@
     \field{volume}{69}
     \field{journaltitle}{The Journal of Navigation}
     \field{year}{2016}
+  \endentry
+
+  \entry{segers2014ultrasonic}{article}{}
+    \name{author}{4}{}{%
+      {{hash=SL}{%
+         family={Segers},
+         familyi={S\bibinitperiod},
+         given={Laurent},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=TJ}{%
+         family={Tiete},
+         familyi={T\bibinitperiod},
+         given={Jelmer},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Braeken},
+         familyi={B\bibinitperiod},
+         given={An},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=TA}{%
+         family={Touhafi},
+         familyi={T\bibinitperiod},
+         given={Abdellah},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Multidisciplinary Digital Publishing Institute}%
+    }
+    \strng{namehash}{SLTJBA+1}
+    \strng{fullhash}{SLTJBATA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{3172\bibrangedash 3187}
+    \field{title}{Ultrasonic multiple-access ranging system using spread
+  spectrum and MEMS technology for indoor localization}
+    \field{volume}{14}
+    \field{journaltitle}{Sensors}
+    \field{year}{2014}
   \endentry
 
   \entry{hsiao2008two}{inproceedings}{}
@@ -241,13 +284,19 @@
          giveni={P\bibinitperiod},
       }}%
     }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
     \strng{namehash}{HCCHP1}
     \strng{fullhash}{HCCHP1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{Sensor Networks, Ubiquitous and Trustworthy Computing}
+    \field{booktitle}{Sensor Networks, Ubiquitous and Trustworthy Computing,
+  2008. SUTC'08. IEEE International Conference on}
+    \field{pages}{306\bibrangedash 311}
     \field{title}{Two practical considerations of beacon deployment for
   ultrasound-based indoor localization systems}
+    \field{year}{2008}
   \endentry
 
   \entry{xu2011performance}{article}{}
@@ -255,14 +304,14 @@
       {{hash=XJ}{%
          family={Xu},
          familyi={X\bibinitperiod},
-         given={J},
-         giveni={J},
+         given={Jie},
+         giveni={J\bibinitperiod},
       }}%
       {{hash=MM}{%
          family={Ma},
          familyi={M\bibinitperiod},
-         given={M},
-         giveni={M},
+         given={Maode},
+         giveni={M\bibinitperiod},
       }}%
       {{hash=LC}{%
          family={Law},
@@ -271,16 +320,20 @@
          giveni={C\bibinitperiod},
       }}%
     }
-    \strng{namehash}{XJ+2}
+    \list{publisher}{1}{%
+      {IET}%
+    }
+    \strng{namehash}{XJMMLC1}
     \strng{fullhash}{XJMMLC1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{number}{2}
-    \field{pages}{46}
+    \field{pages}{46\bibrangedash 53}
     \field{title}{Performance of time-difference-of-arrival ultra wideband
   indoor localisation}
     \field{volume}{5}
     \field{journaltitle}{IET science, measurement \& technology}
+    \field{year}{2011}
   \endentry
 
   \entry{zhang2013tdoa}{article}{}
@@ -292,7 +345,7 @@
          giveni={R\bibinitperiod},
       }}%
       {{hash=HF}{%
-         family={Hoflinger},
+         family={H{\"o}flinger},
          familyi={H\bibinitperiod},
          given={Fabian},
          giveni={F\bibinitperiod},
@@ -304,13 +357,20 @@
          giveni={L\bibinitperiod},
       }}%
     }
-    \strng{namehash}{ZR+1}
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{ZRHFRL1}
     \strng{fullhash}{ZRHFRL1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{number}{8}
+    \field{pages}{2205\bibrangedash 2214}
     \field{title}{TDOA-based localization using interacting multiple model
   estimator and ultrasonic transmitter/receiver}
-    \field{journaltitle}{IEEE Transactions on Instrumentation}
+    \field{volume}{62}
+    \field{journaltitle}{IEEE Transactions on Instrumentation and Measurement}
+    \field{year}{2013}
   \endentry
 
   \entry{barshan2000fast}{article}{}
@@ -383,7 +443,7 @@
          giveni={J\bibinitperiod},
       }}%
     }
-    \strng{namehash}{GJC+1}
+    \strng{namehash}{GJCLVTJ1}
     \strng{fullhash}{GJCLVTJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -448,7 +508,7 @@
     \list{organization}{1}{%
       {ACM}%
     }
-    \strng{namehash}{LP+1}
+    \strng{namehash}{LPRNSO+1}
     \strng{fullhash}{LPRNSOSBRA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -496,7 +556,7 @@
     \list{publisher}{1}{%
       {Elsevier}%
     }
-    \strng{namehash}{AC+1}
+    \strng{namehash}{ACSSZT+1}
     \strng{fullhash}{ACSSZTGRSK1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -532,7 +592,7 @@
     \list{organization}{1}{%
       {IEEE}%
     }
-    \strng{namehash}{PG+1}
+    \strng{namehash}{PGAGCG1}
     \strng{fullhash}{PGAGCG1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -581,7 +641,7 @@
     \list{publisher}{1}{%
       {Lule{\aa} tekniska universitet}%
     }
-    \strng{namehash}{EO+1}
+    \strng{namehash}{EOSMBJvd+1}
     \strng{fullhash}{EOSMBJvdLDSF1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -632,7 +692,7 @@
     \list{publisher}{1}{%
       {Multidisciplinary Digital Publishing Institute}%
     }
-    \strng{namehash}{SL+1}
+    \strng{namehash}{SLVBDDWS+1}
     \strng{fullhash}{SLVBDDWSBATASK1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -675,7 +735,7 @@
     \list{publisher}{1}{%
       {IEEE}%
     }
-    \strng{namehash}{HM+1}
+    \strng{namehash}{HMWMYKW+1}
     \strng{fullhash}{HMWMYKWZKJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -837,7 +897,7 @@
     \list{publisher}{1}{%
       {IEEE}%
     }
-    \strng{namehash}{KJW+1}
+    \strng{namehash}{KJWWYKBH+1}
     \strng{fullhash}{KJWWYKBHKKS1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -897,7 +957,7 @@
     \list{publisher}{1}{%
       {IEEE}%
     }
-    \strng{namehash}{SY+1}
+    \strng{namehash}{SYHYZJ+1}
     \strng{fullhash}{SYHYZJCPCPCJSKG1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -931,7 +991,7 @@
          giveni={C},
       }}%
     }
-    \strng{namehash}{HF+1}
+    \strng{namehash}{HFPMHC1}
     \strng{fullhash}{HFPMHC1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -961,7 +1021,7 @@
          giveni={H\bibinitperiod},
       }}%
     }
-    \strng{namehash}{SMAN+1}
+    \strng{namehash}{SMANPKSH1}
     \strng{fullhash}{SMANPKSH1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -1005,7 +1065,7 @@
     \list{publisher}{1}{%
       {Hindawi Publishing Corporation}%
     }
-    \strng{namehash}{GR+1}
+    \strng{namehash}{GRLMOM+1}
     \strng{fullhash}{GRLMOMPSJWP1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -1058,7 +1118,7 @@
     \list{publisher}{1}{%
       {EMW Publishing}%
     }
-    \strng{namehash}{BMA+1}
+    \strng{namehash}{BMAMFSPTJ+1}
     \strng{fullhash}{BMAMFSPTJLTRMFRPAEJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -1130,7 +1190,7 @@
     \list{organization}{1}{%
       {IEEE}%
     }
-    \strng{namehash}{EA+1}
+    \strng{namehash}{EARLMJT+1}
     \strng{fullhash}{EARLMJTSC1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -1184,7 +1244,7 @@
     \list{publisher}{1}{%
       {ACM}%
     }
-    \strng{namehash}{LD+1}
+    \strng{namehash}{LDLJYX+1}
     \strng{fullhash}{LDLJYXCRRSSHV1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -1218,7 +1278,7 @@
          giveni={H\bibinitperiod},
       }}%
     }
-    \strng{namehash}{PCF+1}
+    \strng{namehash}{PCFLCKHH1}
     \strng{fullhash}{PCFLCKHH1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -1271,7 +1331,7 @@
     \list{publisher}{1}{%
       {IEEE}%
     }
-    \strng{namehash}{MH+1}
+    \strng{namehash}{MHZMBVK1}
     \strng{fullhash}{MHZMBVK1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -1313,7 +1373,7 @@
     \list{publisher}{1}{%
       {Multidisciplinary Digital Publishing Institute}%
     }
-    \strng{namehash}{KMO+1}
+    \strng{namehash}{KMOGSSLX+1}
     \strng{fullhash}{KMOGSSLXPM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -1375,7 +1435,7 @@
     \list{organization}{1}{%
       {IEEE}%
     }
-    \strng{namehash}{GMMU+1}
+    \strng{namehash}{GMMULSMX1}
     \strng{fullhash}{GMMULSMX1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -1408,7 +1468,10 @@
          giveni={J\bibinitperiod},
       }}%
     }
-    \strng{namehash}{KL+1}
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{KLBGHJ1}
     \strng{fullhash}{KLBGHJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -1417,6 +1480,7 @@
     \field{title}{Robust wireless signal indoor localization}
     \field{volume}{27}
     \field{journaltitle}{Concurrency and Computation: Practice and Experience}
+    \field{year}{2015}
   \endentry
 
   \entry{tripathy2015fourier}{article}{}
@@ -1492,7 +1556,7 @@
     \list{publisher}{1}{%
       {IEEE}%
     }
-    \strng{namehash}{JJC+1}
+    \strng{namehash}{JJCSRDGI+1}
     \strng{fullhash}{JJCSRDGIWSMPSGHG1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -1531,7 +1595,7 @@
     \list{publisher}{1}{%
       {IEEE}%
     }
-    \strng{namehash}{GMMU+1}
+    \strng{namehash}{GMMUMXLS1}
     \strng{fullhash}{GMMUMXLS1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -1565,15 +1629,20 @@
          giveni={M\bibinitperiod},
       }}%
     }
-    \strng{namehash}{OO+1}
+    \list{publisher}{1}{%
+      {IET}%
+    }
+    \strng{namehash}{OOAMGM1}
     \strng{fullhash}{OOAMGM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{number}{10}
+    \field{pages}{1800\bibrangedash 1809}
     \field{title}{Ultra-wideband-based multilateration technique for indoor
   localisation}
     \field{volume}{8}
     \field{journaltitle}{IET Communications}
+    \field{year}{2014}
   \endentry
 
   \entry{lazik2015ultrasonic}{inproceedings}{}
@@ -1606,7 +1675,7 @@
     \list{organization}{1}{%
       {IEEE}%
     }
-    \strng{namehash}{LP+1}
+    \strng{namehash}{LPRNSB+1}
     \strng{fullhash}{LPRNSBRA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -1615,6 +1684,721 @@
     \field{pages}{108\bibrangedash 118}
     \field{title}{Ultrasonic time synchronization and ranging on smartphones}
     \field{year}{2015}
+  \endentry
+
+  \entry{alsharif2017zadoff}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=AMH}{%
+         family={AlSharif},
+         familyi={A\bibinitperiod},
+         given={Mohammed\bibnamedelima H},
+         giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Saad},
+         familyi={S\bibinitperiod},
+         given={Mohamed},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Siala},
+         familyi={S\bibinitperiod},
+         given={Mohamed},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BT}{%
+         family={Ballal},
+         familyi={B\bibinitperiod},
+         given={Tarig},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=BH}{%
+         family={Boujemaa},
+         familyi={B\bibinitperiod},
+         given={Hatem},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=ANTY}{%
+         family={Al-Naffouri},
+         familyi={A\bibinitperiod-N\bibinitperiod},
+         given={Tareq\bibnamedelima Y},
+         giveni={T\bibinitperiod\bibinitdelim Y\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{AMHSMSM+1}
+    \strng{fullhash}{AMHSMSMBTBHANTY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Signal Processing Conference (EUSIPCO), 2017 25th
+  European}
+    \field{pages}{1250\bibrangedash 1254}
+    \field{title}{Zadoff-Chu coded ultrasonic signal for accurate range
+  estimation}
+    \field{year}{2017}
+  \endentry
+
+  \entry{zivkovic2014zadoff}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=ZM}{%
+         family={Zivkovic},
+         familyi={Z\bibinitperiod},
+         given={Milan},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={Mathar},
+         familyi={M\bibinitperiod},
+         given={Rudolf},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{ZMMR1}
+    \strng{fullhash}{ZMMR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Signal Processing Advances in Wireless Communications
+  (SPAWC), 2014 IEEE 15th International Workshop on}
+    \field{pages}{110\bibrangedash 114}
+    \field{title}{Zadoff-Chu sequence based time-domain SNR estimation for OFDM
+  systems}
+    \field{year}{2014}
+  \endentry
+
+  \entry{hyder2016zadoff}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HMM}{%
+         family={Hyder},
+         familyi={H\bibinitperiod},
+         given={Md\bibnamedelima Mashud},
+         giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=MK}{%
+         family={Mahata},
+         familyi={M\bibinitperiod},
+         given={Kaushik},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HMMMK1}
+    \strng{fullhash}{HMMMK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Zadoff-Chu sequence design for random access initial uplink
+  synchronization}
+    \field{journaltitle}{arXiv preprint arXiv:1604.01476}
+    \field{year}{2016}
+  \endentry
+
+  \entry{wangaidloc}{article}{}
+    \name{author}{5}{}{%
+      {{hash=WZ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Zhi},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=ZL}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Lei},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=LF}{%
+         family={Lin},
+         familyi={L\bibinitperiod},
+         given={Feng},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=HD}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Danjie},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=HY}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Yifan},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WZZLLF+1}
+    \strng{fullhash}{WZZLLFHDHY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{AIDLOC: AN ACCURATE ACOUSTIC INDOOR LOCALIZATION SYSTEM}
+  \endentry
+
+  \entry{zhang2016compact}{article}{}
+    \name{author}{5}{}{%
+      {{hash=ZJ}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Ji},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=GV}{%
+         family={Grabe},
+         familyi={G\bibinitperiod},
+         given={Volker},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=HB}{%
+         family={Hamner},
+         familyi={H\bibinitperiod},
+         given={Brad},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=DD}{%
+         family={Duggins},
+         familyi={D\bibinitperiod},
+         given={Dave},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Singh},
+         familyi={S\bibinitperiod},
+         given={Sanjiv},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZJGVHB+1}
+    \strng{fullhash}{ZJGVHBDDSS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Compact, real-time localization without reliance on
+  infrastructure}
+    \field{journaltitle}{The first place 3D entry}
+    \field{year}{2016}
+  \endentry
+
+  \entry{gunesintranav}{article}{}
+    \name{author}{2}{}{%
+      {{hash=GE}{%
+         family={G{\""u}nes},
+         familyi={G\bibinitperiod},
+         given={Ersan},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=IG}{%
+         family={Ibarra},
+         familyi={I\bibinitperiod},
+         given={Gonzalo},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GEIG1}
+    \strng{fullhash}{GEIG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{IntraNav--Low-Cost Indoor Localization \& Navigation System}
+  \endentry
+
+  \entry{liu2007survey}{article}{}
+    \name{author}{4}{}{%
+      {{hash=LH}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Hui},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=DH}{%
+         family={Darabi},
+         familyi={D\bibinitperiod},
+         given={Houshang},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=BP}{%
+         family={Banerjee},
+         familyi={B\bibinitperiod},
+         given={Pat},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Jing},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{LHDHBP+1}
+    \strng{fullhash}{LHDHBPLJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{6}
+    \field{pages}{1067\bibrangedash 1080}
+    \field{title}{Survey of wireless indoor positioning techniques and systems}
+    \field{volume}{37}
+    \field{journaltitle}{IEEE Transactions on Systems, Man, and Cybernetics,
+  Part C (Applications and Reviews)}
+    \field{year}{2007}
+  \endentry
+
+  \entry{priyantha2000cricket}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=PNB}{%
+         family={Priyantha},
+         familyi={P\bibinitperiod},
+         given={Nissanka\bibnamedelima B},
+         giveni={N\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=CA}{%
+         family={Chakraborty},
+         familyi={C\bibinitperiod},
+         given={Anit},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BH}{%
+         family={Balakrishnan},
+         familyi={B\bibinitperiod},
+         given={Hari},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{PNBCABH1}
+    \strng{fullhash}{PNBCABH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 6th annual international conference on
+  Mobile computing and networking}
+    \field{pages}{32\bibrangedash 43}
+    \field{title}{The cricket location-support system}
+    \field{year}{2000}
+  \endentry
+
+  \entry{wobschall2010synchronization}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=WD}{%
+         family={Wobschall},
+         familyi={W\bibinitperiod},
+         given={Darold},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=MY}{%
+         family={Ma},
+         familyi={M\bibinitperiod},
+         given={Yuan},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{WDMY1}
+    \strng{fullhash}{WDMY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Precision Clock Synchronization for Measurement Control
+  and Communication (ISPCS), 2010 International IEEE Symposium on}
+    \field{pages}{67\bibrangedash 70}
+    \field{title}{Synchronization of wireless sensor networks using a modified
+  IEEE 1588 protocol}
+    \field{year}{2010}
+  \endentry
+
+  \entry{lin2015mobile}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=LXY}{%
+         family={Lin},
+         familyi={L\bibinitperiod},
+         given={Xin-Yu},
+         giveni={X\bibinitperiod-Y\bibinitperiod},
+      }}%
+      {{hash=HTW}{%
+         family={Ho},
+         familyi={H\bibinitperiod},
+         given={Te-Wei},
+         giveni={T\bibinitperiod-W\bibinitperiod},
+      }}%
+      {{hash=FCC}{%
+         family={Fang},
+         familyi={F\bibinitperiod},
+         given={Cheng-Chung},
+         giveni={C\bibinitperiod-C\bibinitperiod},
+      }}%
+      {{hash=YZS}{%
+         family={Yen},
+         familyi={Y\bibinitperiod},
+         given={Zui-Shen},
+         giveni={Z\bibinitperiod-S\bibinitperiod},
+      }}%
+      {{hash=YBJ}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Bey-Jing},
+         giveni={B\bibinitperiod-J\bibinitperiod},
+      }}%
+      {{hash=LF}{%
+         family={Lai},
+         familyi={L\bibinitperiod},
+         given={Feipei},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{LXYHTWFCC+1}
+    \strng{fullhash}{LXYHTWFCCYZSYBJLF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Engineering in Medicine and Biology Society (EMBC), 2015
+  37th Annual International Conference of the IEEE}
+    \field{pages}{4970\bibrangedash 4973}
+    \field{title}{A mobile indoor positioning system based on iBeacon
+  technology}
+    \field{year}{2015}
+  \endentry
+
+  \entry{zhou2009efficient}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=ZY}{%
+         family={Zhou},
+         familyi={Z\bibinitperiod},
+         given={Yu},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{ZY1}
+    \strng{fullhash}{ZY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Intelligent Robots and Systems, 2009. IROS 2009. IEEE/RSJ
+  International Conference on}
+    \field{pages}{3474\bibrangedash 3479}
+    \field{title}{An efficient least-squares trilateration algorithm for mobile
+  robot localization}
+    \field{year}{2009}
+  \endentry
+
+  \entry{lee2013correlation}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=LTK}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Tae-Kyo},
+         giveni={T\bibinitperiod-K\bibinitperiod},
+      }}%
+      {{hash=YK}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Kyeongcheol},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{LTKYK1}
+    \strng{fullhash}{LTKYK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Signal Design and Its Applications in Communications, The
+  Sixth International Workshop on}
+    \field{pages}{88\bibrangedash 91}
+    \field{title}{On the correlation properties of generalized chirp-like
+  sequences and their application}
+    \field{year}{2013}
+  \endentry
+
+  \entry{suehiro1988modulatable}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SN}{%
+         family={Suehiro},
+         familyi={S\bibinitperiod},
+         given={Naoki},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Hatori},
+         familyi={H\bibinitperiod},
+         given={Mitsutoshi},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{SNHM1}
+    \strng{fullhash}{SNHM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{93\bibrangedash 100}
+    \field{title}{Modulatable orthogonal sequences and their application to
+  SSMA systems}
+    \field{volume}{34}
+    \field{journaltitle}{IEEE Transactions on Information Theory}
+    \field{year}{1988}
+  \endentry
+
+  \entry{thomas2005revisiting}{article}{}
+    \name{author}{2}{}{%
+      {{hash=TF}{%
+         family={Thomas},
+         familyi={T\bibinitperiod},
+         given={Federico},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=RL}{%
+         family={Ros},
+         familyi={R\bibinitperiod},
+         given={Llu{\'\i}s},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{TFRL1}
+    \strng{fullhash}{TFRL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{93\bibrangedash 101}
+    \field{title}{Revisiting trilateration for robot localization}
+    \field{volume}{21}
+    \field{journaltitle}{IEEE Transactions on robotics}
+    \field{year}{2005}
+  \endentry
+
+  \entry{srinivasan2007survey}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SA}{%
+         family={Srinivasan},
+         familyi={S\bibinitperiod},
+         given={Avinash},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Jie},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {CRC Press, Taylor}%
+      {Francis Group: Florida, USA}%
+    }
+    \strng{namehash}{SAWJ1}
+    \strng{fullhash}{SAWJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{126}
+    \field{title}{A survey on secure localization in wireless sensor networks}
+    \field{journaltitle}{Encyclopedia of Wireless and Mobile communications}
+    \field{year}{2007}
+  \endentry
+
+  \entry{kapoor2016novel}{article}{}
+    \name{author}{6}{}{%
+      {{hash=KR}{%
+         family={Kapoor},
+         familyi={K\bibinitperiod},
+         given={Rohan},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=RS}{%
+         family={Ramasamy},
+         familyi={R\bibinitperiod},
+         given={Subramanian},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Gardi},
+         familyi={G\bibinitperiod},
+         given={Alessandro},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BC}{%
+         family={Bieber},
+         familyi={B\bibinitperiod},
+         given={Chad},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SL}{%
+         family={Silverberg},
+         familyi={S\bibinitperiod},
+         given={Larry},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Sabatini},
+         familyi={S\bibinitperiod},
+         given={Roberto},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Multidisciplinary Digital Publishing Institute}%
+    }
+    \strng{namehash}{KRRSGA+1}
+    \strng{fullhash}{KRRSGABCSLSR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{10}
+    \field{pages}{1637}
+    \field{title}{A novel 3D multilateration sensor using distributed
+  ultrasonic beacons for indoor navigation}
+    \field{volume}{16}
+    \field{journaltitle}{Sensors}
+    \field{year}{2016}
+  \endentry
+
+  \entry{miao2016moving}{article}{}
+    \name{author}{4}{}{%
+      {{hash=MF}{%
+         family={Miao},
+         familyi={M\bibinitperiod},
+         given={Feng},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=YD}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Diange},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={Wen},
+         familyi={W\bibinitperiod},
+         given={Junjie},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LX}{%
+         family={Lian},
+         familyi={L\bibinitperiod},
+         given={Xiaomin},
+         giveni={X\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{MFYDWJ+1}
+    \strng{fullhash}{MFYDWJLX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{93\bibrangedash 103}
+    \field{title}{Moving sound source localization based on triangulation
+  method}
+    \field{volume}{385}
+    \field{journaltitle}{Journal of Sound and Vibration}
+    \field{year}{2016}
+  \endentry
+
+  \entry{yang2010quality}{article}{}
+    \name{author}{2}{}{%
+      {{hash=YZ}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Zheng},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=LY}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Yunhao},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{YZLY1}
+    \strng{fullhash}{YZLY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{5}
+    \field{pages}{631\bibrangedash 640}
+    \field{title}{Quality of trilateration: Confidence-based iterative
+  localization}
+    \field{volume}{21}
+    \field{journaltitle}{IEEE Transactions on Parallel and Distributed Systems}
+    \field{year}{2010}
+  \endentry
+
+  \entry{filonenko2012asynchronous}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=FV}{%
+         family={Filonenko},
+         familyi={F\bibinitperiod},
+         given={Viacheslav},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=CC}{%
+         family={Cullen},
+         familyi={C\bibinitperiod},
+         given={Charlie},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=CJD}{%
+         family={Carswell},
+         familyi={C\bibinitperiod},
+         given={James\bibnamedelima D},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{FVCCCJD1}
+    \strng{fullhash}{FVCCCJD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{International Symposium on Web and Wireless Geographical
+  Information Systems}
+    \field{pages}{33\bibrangedash 46}
+    \field{title}{Asynchronous ultrasonic trilateration for indoor positioning
+  of mobile phones}
+    \field{year}{2012}
+  \endentry
+
+  \entry{tekdas2010sensor}{article}{}
+    \name{author}{2}{}{%
+      {{hash=TO}{%
+         family={Tekdas},
+         familyi={T\bibinitperiod},
+         given={Onur},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=IV}{%
+         family={Isler},
+         familyi={I\bibinitperiod},
+         given={Volkan},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{TOIV1}
+    \strng{fullhash}{TOIV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{681\bibrangedash 685}
+    \field{title}{Sensor placement for triangulation-based localization}
+    \field{volume}{7}
+    \field{journaltitle}{IEEE transactions on Automation Science and
+  Engineering}
+    \field{year}{2010}
   \endentry
 \endsortlist
 \endinput

@@ -2,7 +2,10 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: report_template_1.aux
 The style file: biblatex.bst
 Database file #1: report_template_1-blx.bib
 Database file #2: references.bib
-Warning--I didn't find a database entry for "segers2014ultrasonic"
+Repeated entry---line 404 of file references.bib
+ : @article{remyaofdm
+ :                   ,
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "runge2011precise"
 Warning--I didn't find a database entry for "wu2013will"
 Warning--I didn't find a database entry for "ros2012indoor"
@@ -15,4 +18,4 @@ Warning--I didn't find a database entry for "pysoundfile"
 Warning--I didn't find a database entry for "bencina2001portaudio"
 Warning--I didn't find a database entry for "f5oeo_2017"
 Biblatex version: 3.3
-(There were 12 warnings)
+(There was 1 error message)

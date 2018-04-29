@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 from numpy import *
 import soundfile as sf
-import sounddevice
 
 sampleRate = 44100  # sampling rate, Hz, must be integer
 duration = 0.02  # in seconds, may be float
